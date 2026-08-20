@@ -1,0 +1,622 @@
+{
+  "title": "Đề Thi FE PMG201c - SU26 FE (50 Câu)",
+  "description": "Bộ 50 câu hỏi trắc nghiệm ôn thi PMG201c kỳ Summer 2026 kèm đáp án và phân tích chi tiết.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "True or False: A Project is defined as being unique and temporary, with an undefined start and finish.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "category": "Project Foundations",
+      "explanation": "A project is defined as a temporary endeavor undertaken to create a unique product, service, or result. It has a DEFINED beginning and end (start and finish)."
+    },
+    {
+      "id": 2,
+      "question": "True or False: In a projectized organization, team members are never assigned to the project full time.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "category": "Organizational Structures",
+      "explanation": "In a projectized (project-oriented) organization, most of the organization's resources are involved in project work, and team members are typically assigned to projects full time."
+    },
+    {
+      "id": 3,
+      "question": "A project manager's primary responsibility is to deliver the product of the project within project constraints. Actions taken and changes made to the benefit of one constraint could negatively affect another. Which of the following best describes the major constraints on a project?",
+      "options": [
+        "Scope, number of resources, and cost",
+        "Scope, cost, and schedule",
+        "Scope, schedule, cost, quality, risk, resources, and customer satisfaction",
+        "Schedule, cost, and number of changes"
+      ],
+      "answer": 2,
+      "category": "Project Constraints",
+      "explanation": "Modern project management recognizes competing constraints including Scope, Schedule, Cost, Quality, Risk, Resources, and Customer Satisfaction."
+    },
+    {
+      "id": 4,
+      "question": "The person who should be in control of the project during project planning is the:",
+      "options": [
+        "Project manager",
+        "Team member",
+        "Functional manager",
+        "Sponsor"
+      ],
+      "answer": 0,
+      "category": "Project Roles",
+      "explanation": "The Project Manager is responsible for leading and controlling the planning process to produce the project management plan."
+    },
+    {
+      "id": 5,
+      "question": "A project management plan should be realistic in order to be used to manage the project. Which of the following is the best method to achieve a realistic project management plan?",
+      "options": [
+        "The sponsor creates the project management plan based on input from the project manager",
+        "The functional manager creates the project management plan based on input from the project manager",
+        "The project manager creates the project management plan based on input from senior management",
+        "The project manager creates the project management plan based on input from the team"
+      ],
+      "answer": 3,
+      "category": "Project Integration Management",
+      "explanation": "The project management plan is developed by the project manager with direct involvement and input from the project team, who will perform the actual work."
+    },
+    {
+      "id": 6,
+      "question": "True or False: The Project Charter is a document that formally authorizes the existence of a project. It also documents initial requirements that satisfy the stakeholder's needs and expectations.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Project Integration Management",
+      "explanation": "The Project Charter formally authorizes the project and provides the project manager with the authority to apply organizational resources to project activities, outlining high-level requirements and stakeholder expectations."
+    },
+    {
+      "id": 7,
+      "question": "True or False: Scope creep represents the situation that the changes are made with the proper process and authority.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "category": "Scope Management",
+      "explanation": "Scope creep is the uncontrolled expansion to product or project scope without adjustments to time, cost, and resources (i.e. WITHOUT proper change control process or authority)."
+    },
+    {
+      "id": 8,
+      "question": "A good change process will:",
+      "options": [
+        "Require the same level of approval for all changes",
+        "Have change thresholds that are appropriate for the type of change",
+        "Be very complex in order to discourage changes",
+        "Allow the project manager to approve all changes"
+      ],
+      "answer": 1,
+      "category": "Integration Management",
+      "explanation": "An effective change control process establishes thresholds so minor changes can be approved quickly by the PM, while major changes impacting baselines require CCB or sponsor approval."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is NOT the output of Plan Scope Management process? (Choose 2 answers)",
+      "options": [
+        "Scope Management Plan",
+        "Requirement Management Plan",
+        "Time Management Plan",
+        "Cost Management Plan"
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "category": "Scope Management",
+      "explanation": "The outputs of 'Plan Scope Management' are only the Scope Management Plan and the Requirements Management Plan. Time (Schedule) Management Plan and Cost Management Plan are outputs of Plan Schedule Management and Plan Cost Management."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is included in the Project Scope Statement document?",
+      "options": [
+        "Acceptance criteria",
+        "Milestones",
+        "WBS (Work Breakdown Structure)",
+        "WBS Dictionary"
+      ],
+      "answer": 0,
+      "category": "Scope Management",
+      "explanation": "The Project Scope Statement includes the project scope description, acceptance criteria, deliverables, project exclusions, constraints, and assumptions. WBS and WBS dictionary are created subsequently in the 'Create WBS' process."
+    },
+    {
+      "id": 11,
+      "question": "True or False: When creating the WBS of the project, Project Manager decided to not include his management tasks into WBS as those tasks will be done by him and he knows well what he has to do in the project.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 0,
+      "category": "Scope Management",
+      "explanation": "False. The WBS must adhere to the 100% Rule, encompassing 100% of the work defined by the project scope, which explicitly includes Project Management activities."
+    },
+    {
+      "id": 12,
+      "question": "Which one is NOT included in the Scope Baseline?",
+      "options": [
+        "Scope statement",
+        "WBS",
+        "WBS dictionary",
+        "Project Documents Updates"
+      ],
+      "answer": 3,
+      "category": "Scope Management",
+      "explanation": "The Scope Baseline consists strictly of: 1) Project Scope Statement, 2) WBS, and 3) WBS Dictionary. Project Documents Updates is a standard process output, not a component of the baseline."
+    },
+    {
+      "id": 13,
+      "question": "The network diagram can be used to:",
+      "options": [
+        "Control the cost performance of the project",
+        "Show project schedule performance over time",
+        "Identify project resource requirements",
+        "Identify opportunities to compress the project schedule",
+        "Help to justify project quality metrics"
+      ],
+      "answer": 3,
+      "category": "Schedule Management",
+      "explanation": "A project schedule network diagram displays activity dependencies and the critical path, enabling project managers to identify opportunities to compress the schedule via crashing or fast-tracking."
+    },
+    {
+      "id": 14,
+      "question": "True or False: If 'review online modules' needs to begin before 'develop online modules' can finish, that is called a start to finish relationship.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "category": "Schedule Management",
+      "explanation": "True. In a Start-to-Finish (SF) dependency, a successor activity cannot finish until a predecessor activity has started."
+    },
+    {
+      "id": 15,
+      "question": "To calculate late finish (LF) of an activity which has only one successor, you will:",
+      "options": [
+        "Take the late start of its immediate successor",
+        "Take the early start of its immediate successor",
+        "Take the late finish of its immediate successor",
+        "Take the early finish of its immediate successor"
+      ],
+      "answer": 0,
+      "category": "Schedule Management",
+      "explanation": "In the backward pass of CPM, the Late Finish (LF) of an activity is equal to the smallest Late Start (LS) among all its immediate successors. If it has only one successor, LF = LS of that successor."
+    },
+    {
+      "id": 16,
+      "question": "True or False: The Backward Pass is used through the activities to determine the total duration of the project.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "category": "Schedule Management",
+      "explanation": "False. The Forward Pass calculates early start/early finish and the total duration (critical path). The Backward Pass calculates late start, late finish, and float/slack."
+    },
+    {
+      "id": 17,
+      "question": "True or False: Crashing is the approach to add more resources (labor, overtime, etc.) into the activities to reduce their durations.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "category": "Schedule Management",
+      "explanation": "True. Crashing is a schedule compression technique used to shorten the schedule duration for the least incremental cost by adding resources (overtime, extra personnel)."
+    },
+    {
+      "id": 18,
+      "question": "Different estimating techniques serve different purposes. Which of the following statements are correct? (Choose 2 answers)",
+      "options": [
+        "When activity duration or resource quantities are uncertain, use top-down estimating techniques",
+        "When detail is available and accuracy is needed, use bottom-up estimating techniques",
+        "When activity duration or resource quantities are uncertain, use bottom-up estimating techniques",
+        "When detail is available and accuracy is needed, use top-down estimating techniques"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "category": "Schedule & Cost Estimating",
+      "explanation": "Top-down (analogous) estimating is used early when information is uncertain/limited. Bottom-up estimating is used when detailed work packages are available and high accuracy is required."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following is NOT a disadvantage of top-down estimating?",
+      "options": [
+        "Slow",
+        "Less accurate",
+        "Requires considerable experience to do well",
+        "Does not take into account the differences between projects"
+      ],
+      "answer": 0,
+      "category": "Estimating Techniques",
+      "explanation": "Top-down estimating is quick (fast) and inexpensive. Thus, being 'slow' is NOT a disadvantage of top-down estimating (it is actually an advantage: fast)."
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is the most correct statement regarding management and contingency reserves?",
+      "options": [
+        "Both of them are included into the cost budget of the project",
+        "Both of them are not included into the cost budget of the project",
+        "Management reserve is included into the cost budget but contingency reserve is not",
+        "Contingency reserve is included into the cost budget but management reserve is not"
+      ],
+      "answer": 0,
+      "category": "Cost Management",
+      "explanation": "The Cost Budget = Cost Baseline + Management Reserve, while Cost Baseline = Activity Estimates + Contingency Reserve. Therefore, both reserves are included in the overall project cost budget."
+    },
+    {
+      "id": 21,
+      "question": "True or False: Earned value integrates scope, schedule and budget and uses monetary values to assess project status.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Cost Management",
+      "explanation": "True. Earned Value Management (EVM) integrates the project scope baseline with cost baseline and schedule baseline, using monetary units to assess project performance."
+    },
+    {
+      "id": 22,
+      "question": "The discipline of quality management complements the discipline of project management. Both recognize all but one of the following:",
+      "options": [
+        "Customer satisfaction",
+        "Prevention over inspection",
+        "Continuous improvement",
+        "Project team responsibility"
+      ],
+      "answer": 3,
+      "category": "Quality Management",
+      "explanation": "Modern quality management emphasizes 'Management responsibility' (leadership providing necessary resources/processes) rather than solely blaming project team responsibility."
+    },
+    {
+      "id": 23,
+      "question": "True or False: Project quality focuses on the project management processes used to meet project objectives.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Quality Management",
+      "explanation": "True. Project quality management addresses the management of the project and the deliverables of the project, ensuring processes meet quality standards."
+    },
+    {
+      "id": 24,
+      "question": "The Process Improvement Plan is:",
+      "options": [
+        "The number one component of the project management plan",
+        "A subsidiary, or component of the project management plan"
+      ],
+      "answer": 1,
+      "category": "Quality Management",
+      "explanation": "The Process Improvement Plan is a subsidiary component of the overall Project Management Plan (or part of Quality Management Plan)."
+    },
+    {
+      "id": 25,
+      "question": "True or False: Performing quality assurance within the context of a project involves taking actions to eliminate causes of unsatisfactory project performance.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Quality Management",
+      "explanation": "True. Quality Assurance audits quality requirements and quality control measurements to ensure appropriate quality standards and eliminate root causes of poor performance."
+    },
+    {
+      "id": 26,
+      "question": "True or False: Performing quality control within the context of a project involves applying the planned, systematic quality activities to ensure that the project correctly employs all processes needed to meet project objectives and product requirements.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 0,
+      "category": "Quality Management",
+      "explanation": "False. Applying planned systematic activities to ensure processes are employed correctly is the definition of Quality Assurance (QA). Quality Control (QC) monitors and records results of executing quality activities to assess performance and ensure outputs are complete and correct."
+    },
+    {
+      "id": 27,
+      "question": "True or False: Influence means you have the right to apply resources, make decisions and give approvals.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 0,
+      "category": "Resource Management",
+      "explanation": "False. The right to apply resources, make decisions, and give approvals is 'Authority'. 'Influence' is the ability to persuade and impact people's decisions and behaviors without formal authority."
+    },
+    {
+      "id": 28,
+      "question": "True or False: Project Human Resource Management includes the processes that organize, manage, and lead the project team.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Resource Management",
+      "explanation": "True. Project Human Resource / Resource Management includes the processes that organize, manage, and lead the project team."
+    },
+    {
+      "id": 29,
+      "question": "Which one of these should be the modern view of conflict?",
+      "options": [
+        "Caused by troublemakers",
+        "Often beneficial",
+        "Should be avoided",
+        "Must be suppressed"
+      ],
+      "answer": 1,
+      "category": "Resource Management",
+      "explanation": "In modern project management, conflict is inevitable, natural, and often beneficial when managed constructively as it leads to improved problem solving and diverse viewpoints."
+    },
+    {
+      "id": 30,
+      "question": "True or False: Each group of persons involved in the project should be assigned, and always needs to know their role and responsibility.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "category": "Resource Management",
+      "explanation": "True. Clear assignment of roles, responsibilities, and authorities (e.g. through a RACI chart) is essential for project team success."
+    },
+    {
+      "id": 31,
+      "question": "Which one of these is not the major source of conflict that a project manager may influence?",
+      "options": [
+        "Project management",
+        "Project priorities",
+        "Project team",
+        "Project resources"
+      ],
+      "answer": 0,
+      "category": "Resource Management",
+      "explanation": "The standard primary sources of conflict on projects are Schedules, Priorities, Resources, Technical opinions, Administrative procedures, Cost, and Personalities."
+    },
+    {
+      "id": 32,
+      "question": "You and another project manager disagree over whether a team member should work on your team or on her team. You decide that the team member can work for the other project manager and suppose that the other project manager will support you in the future. The truth is you wanted this person working on your project. The conflict resolution approach you have used is:",
+      "options": [
+        "Compromising",
+        "Smoothing",
+        "Confronting",
+        "Forcing"
+      ],
+      "answer": 1,
+      "category": "Resource Management",
+      "explanation": "Smoothing (Accommodating) involves emphasizing areas of agreement rather than difference, conceding one's position to maintain harmony and relationship."
+    },
+    {
+      "id": 33,
+      "question": "In our lessons the acronym RAM stands for:",
+      "options": [
+        "Responsibility Accountability Matrix",
+        "Responsibility Assignment Matrix",
+        "Resource Acquisition Management",
+        "Resource Aligned Management",
+        "Responsible Accountable Manageable"
+      ],
+      "answer": 1,
+      "category": "Resource Management",
+      "explanation": "RAM stands for Responsibility Assignment Matrix (a common example being a RACI chart)."
+    },
+    {
+      "id": 34,
+      "question": "True or False: A project manager spends most of his/her time communicating.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Communications Management",
+      "explanation": "True. Project managers typically spend 75% to 90% of their working time communicating with stakeholders and team members."
+    },
+    {
+      "id": 35,
+      "question": "A Communications Management Plan does the following:",
+      "options": [
+        "Coordinates an effort to communicate in meetings effectively",
+        "Lays out the approach and method for delivering information effectively and efficiently",
+        "Lays out a plan on how to communicate with your Project Sponsor and other organizations",
+        "Coordinates the communication between project leaders and uninterested project members"
+      ],
+      "answer": 1,
+      "category": "Communications Management",
+      "explanation": "The Communications Management Plan outlines the strategy and approach for delivering the right information to the right stakeholders at the right time in an effective and efficient manner."
+    },
+    {
+      "id": 36,
+      "question": "Lateral communication is NOT communication to/from:",
+      "options": [
+        "Your customers",
+        "Your friends",
+        "Your subordinates",
+        "Your peers"
+      ],
+      "answer": 2,
+      "category": "Communications Management",
+      "explanation": "Lateral (horizontal) communication occurs between individuals at the same organizational level (peers). Communication with subordinates is Downward (vertical) communication."
+    },
+    {
+      "id": 37,
+      "question": "Considering a situation in which you need to share an important announcement with your project team. Select the best communication option for the scenario:",
+      "options": [
+        "Send them an instant message with the high-level details of the announcement",
+        "Invite them to a quick meeting to share the announcement and then follow up",
+        "Send a detailed email with tracking turned on so that you know who opened the email and who did not",
+        "Create a poster which describes the announcement and hang a copy or two in the areas most frequented by your team members"
+      ],
+      "answer": 1,
+      "category": "Communications Management",
+      "explanation": "For important announcements, interactive communication (a meeting) ensures clarity and allows immediate Q&A, followed by written documentation for formal record."
+    },
+    {
+      "id": 38,
+      "question": "True or False: Performance reporting aims to inform stakeholders the good achievements of the project's objectives weekly or monthly.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "category": "Communications Management",
+      "explanation": "False. Performance reporting must be unbiased and transparent, reporting both successes/achievements and issues, variances, forecasts, and risks."
+    },
+    {
+      "id": 39,
+      "question": "True or False: The primary goal of project risk management is to maximize the likelihood and impact of negative events or threats and to minimize the likelihood and impact of positive events or opportunities.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 0,
+      "category": "Risk Management",
+      "explanation": "False. The objective of project risk management is to increase the probability and impact of positive risks (opportunities) and decrease the probability and impact of negative risks (threats)."
+    },
+    {
+      "id": 40,
+      "question": "True or False: The primary input of the identification of risks is risk register and one important output is the stakeholder register.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 0,
+      "category": "Risk Management",
+      "explanation": "False. The Stakeholder Register is an INPUT to Identify Risks, and the Risk Register is the primary OUTPUT of Identify Risks."
+    },
+    {
+      "id": 41,
+      "question": "If the response you choose is to accept a risk this means that:",
+      "options": [
+        "You actively do not consider the risk but establish contingency plan",
+        "You change your plans so that you eliminate the risk",
+        "You change your plan so that another party will be responsible for the risk",
+        "You create your plan to reduce the probability and/or the impact of the risk"
+      ],
+      "answer": 0,
+      "category": "Risk Management",
+      "explanation": "Acceptance indicates the project team acknowledges the risk and decides not to take any action before it occurs, except possibly establishing contingency reserves or plans (active acceptance)."
+    },
+    {
+      "id": 42,
+      "question": "You and your team have identified a risk that is a threat to your ability to successfully meet project objectives. The risk involves team members from your company performing work which requires training, certification, and many hours of experience. You have one newly certified team member and others who are still in training. Which do you think is your best response to this risk?",
+      "options": [
+        "Acknowledge your lack of expertise and set aside some contingency reserve to cover the risk",
+        "Change the scope of the project so that this type of work is excluded and introduce a new risk, that of an unhappy sponsor",
+        "Let the team do the work and see what happen, do not prepare any other response",
+        "You have budget to hire external resources and there is a vendor you can hire who specialized in this type of work, hire them"
+      ],
+      "answer": 3,
+      "category": "Risk Management",
+      "explanation": "Transferring/mitigating risk by outsourcing to a specialized vendor when budget is available eliminates the execution risk caused by lack of internal experience."
+    },
+    {
+      "id": 43,
+      "question": "True or False: If you want to identify who your stakeholders are, asking who will not be impacted by the product or service being created can be helpful.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Stakeholder Management",
+      "explanation": "True. In stakeholder analysis, identifying who is NOT impacted helps define boundaries and rule out unnecessary communications."
+    },
+    {
+      "id": 44,
+      "question": "One way to classify your stakeholders is to use the Power/Interest Grid. If a stakeholder is high interest / low power, what should the Project Manager do?",
+      "options": [
+        "Monitor",
+        "Keep satisfied",
+        "Manage closely",
+        "Keep informed"
+      ],
+      "answer": 3,
+      "category": "Stakeholder Management",
+      "explanation": "Stakeholders with High Interest and Low Power should be 'Kept informed'. (High Power/High Interest: Manage closely; High Power/Low Interest: Keep satisfied; Low Power/Low Interest: Monitor)."
+    },
+    {
+      "id": 45,
+      "question": "You just came from a meeting with one of your project stakeholders, he knew about your project and also its potential impacts, and he always supported for the work and its outcomes. How would you classify him?",
+      "options": [
+        "Supportive",
+        "Neutral",
+        "Unaware",
+        "Leading"
+      ],
+      "answer": 0,
+      "category": "Stakeholder Management",
+      "explanation": "Supportive stakeholders are aware of project and potential impacts and supportive of work and its outcomes."
+    },
+    {
+      "id": 46,
+      "question": "True or False: The Project Manager is responsible for stakeholder expectations management.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Stakeholder Management",
+      "explanation": "True. Managing stakeholder expectations and engagement is a core responsibility of the Project Manager."
+    },
+    {
+      "id": 47,
+      "question": "Your stakeholder register is your primary output and should at least contain:",
+      "options": [
+        "Job descriptions, identification information, and stakeholder classification",
+        "Assessment information, scope information, and stakeholder classification",
+        "Assessment information, identification information, and stakeholder classification",
+        "Assessment information, identification information, and risk classification"
+      ],
+      "answer": 2,
+      "category": "Stakeholder Management",
+      "explanation": "The Stakeholder Register includes: 1) Identification information, 2) Assessment information, and 3) Stakeholder classification."
+    },
+    {
+      "id": 48,
+      "question": "The team is helping the project manager to estimate activities on their project. There are several activities they need to estimate that have not been previously done by the company. What is the best method of estimating these activities?",
+      "options": [
+        "Top-down estimating",
+        "Three-point estimating",
+        "Parametric estimating",
+        "Bottom-up estimating"
+      ],
+      "answer": 1,
+      "category": "Schedule Management",
+      "explanation": "Three-point estimating (PERT / Triangular) helps account for estimation uncertainty and risk when there is no historical data available."
+    },
+    {
+      "id": 49,
+      "question": "You have a project to build a new fence. The fence will form a square. Each side is to take one day to build, and $1,000 has been budgeted per side. The sides are planned to be completed one after the other. Today is the end of day 3. Using the project status chart (Side 1: Complete, spent $1,000; Side 2: Complete, spent $1,200; Side 3: 50% done, spent $600; Side 4: Not started), calculate the current Schedule Variance (SV):",
+      "options": [
+        "SV = -$500",
+        "SV = -$300",
+        "SV = -$200",
+        "SV = $200",
+        "SV = $500",
+        "SV = $300"
+      ],
+      "answer": 0,
+      "category": "Cost & EVM Management",
+      "explanation": "Planned Value (PV) at end of day 3 = 3 sides * $1,000 = $3,000. Earned Value (EV) = Side 1 (100% * $1,000) + Side 2 (100% * $1,000) + Side 3 (50% * $1,000) = $1,000 + $1,000 + $500 = $2,500. SV = EV - PV = $2,500 - $3,000 = -$500."
+    },
+    {
+      "id": 50,
+      "question": "In Earned Value Management Technique, you can compute the Cost Performance Index (CPI) by applying which of following formula?",
+      "options": [
+        "CPI = CV / AC",
+        "CPI = PV / AC",
+        "CPI = SV / AC",
+        "CPI = EV / AC"
+      ],
+      "answer": 3,
+      "category": "Cost & EVM Management",
+      "explanation": "Cost Performance Index (CPI) is calculated as Earned Value (EV) divided by Actual Cost (AC): CPI = EV / AC."
+    }
+  ]
+}

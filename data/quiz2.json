@@ -1,0 +1,643 @@
+{
+  "title": "Đề Thi FE PMG201c - SU25 FE (50 Câu)",
+  "description": "Bộ 50 câu hỏi trắc nghiệm ôn thi PMG201c kỳ Summer 2025 kèm đáp án chuẩn và phân tích chi tiết.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "True or False: A Project is defined as being unique and temporary, with a defined start and finish.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "category": "Project Foundations",
+      "explanation": "A project is defined as a temporary endeavor undertaken to create a unique product, service, or result. It has a DEFINED start and finish."
+    },
+    {
+      "id": 2,
+      "question": "In a matrix-based organization:",
+      "options": [
+        "Team members are always assigned to the project full time.",
+        "A project manager is not assigned to the team.",
+        "The project manager acts as manager of the team.",
+        "The functional manager has stronger power than the project manager's power.",
+        "The power of project manager and the power of managers of teams are depending on the organization's specific matrix type."
+      ],
+      "answer": 4,
+      "category": "Organizational Structures",
+      "explanation": "In a matrix organization, the balance of power between the project manager and functional managers depends on the specific matrix type (Weak, Balanced, or Strong matrix)."
+    },
+    {
+      "id": 3,
+      "question": "You have finished planning and have begun executing the project when the client asks if you would shorten the project duration so that the project can finish 2 weeks earlier than the original plan. How are the triple constraints affected?",
+      "options": [
+        "Scope and cost may both be affected",
+        "Neither scope nor cost will be affected in any situation",
+        "Cost will reduce as the project duration is shortened and scope is not changed",
+        "There is no relevant option except the project must be cut down on scope"
+      ],
+      "answer": 0,
+      "category": "Project Constraints",
+      "explanation": "Under the triple constraints (Scope, Time, Cost), shortening duration requires either adding resources/crashing (increasing cost) or cutting features (reducing scope), so both scope and cost may be affected."
+    },
+    {
+      "id": 4,
+      "question": "A project manager has little project experience, but she has been assigned as the project manager of a new project. Because she will be working in a matrix organization to complete her project, she can expect communications to be:",
+      "options": [
+        "Simple",
+        "Open and accurate",
+        "Complex",
+        "Hard to automate"
+      ],
+      "answer": 2,
+      "category": "Organizational Structures",
+      "explanation": "Communications in a matrix organization are complex due to dual reporting relationships (team members report to both functional managers and project managers)."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following best describes a project management plan?",
+      "options": [
+        "A printout from project management software",
+        "A bar chart",
+        "Scope, risk, resource, and other management plan",
+        "A project schedule"
+      ],
+      "answer": 2,
+      "category": "Project Integration Management",
+      "explanation": "A project management plan is a comprehensive document integrating all subsidiary management plans (scope, schedule, cost, quality, resource, risk, etc.) and baselines."
+    },
+    {
+      "id": 6,
+      "question": "True or False: The Project Charter is a document that formally authorizes the existence of a project. It also documents initial requirements that satisfy the stakeholder's needs and expectations.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Project Integration Management",
+      "explanation": "The Project Charter formally authorizes the project, gives authority to the project manager, and outlines high-level requirements and stakeholder expectations."
+    },
+    {
+      "id": 7,
+      "question": "Which one is not the causes of scope creep?",
+      "options": [
+        "Poorly defined objectives",
+        "Lack of defined change control process",
+        "Changing stakeholder perspectives",
+        "Increased understanding of what it takes to get it done",
+        "Ability to say \"NO\""
+      ],
+      "answer": 4,
+      "category": "Scope Management",
+      "explanation": "The ability of a PM to say 'NO' helps prevent scope creep, whereas the inability to say no causes it."
+    },
+    {
+      "id": 8,
+      "question": "To ensure control over the incidence and frequency of change, the project manager establishes a:",
+      "options": [
+        "Work breakdown structure",
+        "Responsibility assignment matrix",
+        "Work procedure schedule",
+        "Change control process"
+      ],
+      "answer": 3,
+      "category": "Project Integration Management",
+      "explanation": "A formal Change Control Process defines how changes to project scope, schedule, and baselines are requested, evaluated, and approved."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is NOT the output of Plan Scope Management process? (Choose 2 answers)",
+      "options": [
+        "Scope Management Plan",
+        "Requirement Management Plan",
+        "Time Management Plan",
+        "Cost Management Plan"
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "category": "Scope Management",
+      "explanation": "The outputs of Plan Scope Management are Scope Management Plan and Requirements Management Plan. Time Management Plan and Cost Management Plan are outputs of Schedule and Cost processes."
+    },
+    {
+      "id": 10,
+      "question": "Should the Project Scope Statement document include?",
+      "options": [
+        "Acceptance criteria",
+        "Milestones",
+        "WBS (Work Breakdown Structure)",
+        "WBS Dictionary"
+      ],
+      "answer": 0,
+      "category": "Scope Management",
+      "explanation": "The Project Scope Statement contains the product scope description, deliverables, acceptance criteria, and project exclusions."
+    },
+    {
+      "id": 11,
+      "question": "You are the project manager of the large project and you are requesting your team members to create the work breakdown structure. Some of team members are angry that you are asking them to do \"extra work\". Which of the following is the best thing you could tell the members to convince them to use work breakdown structure?",
+      "options": [
+        "Work breakdown structure will prevent work from slipping through the cracks",
+        "Work breakdown structure is of greater value on large project",
+        "Work breakdown structure is best when the project involves contracts",
+        "Work breakdown structure is the only way to identify risks"
+      ],
+      "answer": 0,
+      "category": "Scope Management",
+      "explanation": "The primary benefit of the WBS is the 100% rule—ensuring that all project work is accounted for so nothing slips through the cracks."
+    },
+    {
+      "id": 12,
+      "question": "During project executing, a team member comes to the project manager because he is not sure what work he needs to accomplish on the project. Which of the following documents contains detailed descriptions of work packages?",
+      "options": [
+        "WBS dictionary",
+        "Activity list",
+        "Project scope statement",
+        "Scope management plan"
+      ],
+      "answer": 0,
+      "category": "Scope Management",
+      "explanation": "The WBS Dictionary provides detailed deliverable, activity, and scheduling information for each work package component in the WBS."
+    },
+    {
+      "id": 13,
+      "question": "The network diagram can be used to:",
+      "options": [
+        "Control the cost performance of the project",
+        "Show project schedule performance over time",
+        "Identify project resource requirements",
+        "Identify opportunities to compress the project schedule",
+        "Help to justify project quality metrics"
+      ],
+      "answer": 3,
+      "category": "Schedule Management",
+      "explanation": "The project network diagram shows logical dependencies and the critical path, enabling the project team to identify opportunities to compress the schedule (Crashing/Fast-tracking)."
+    },
+    {
+      "id": 14,
+      "question": "If \"develop online modules\" needs to begin before \"review online modules\" can begin, that is called a:",
+      "options": [
+        "Finish to start relationship.",
+        "Start to finish relationship.",
+        "Finish to finish relationship.",
+        "Start to start relationship."
+      ],
+      "answer": 3,
+      "category": "Schedule Management",
+      "explanation": "A relationship where the predecessor activity must start before the successor activity can start is a Start-to-Start (SS) relationship."
+    },
+    {
+      "id": 15,
+      "question": "To calculate late start (LS) of an activity, you will:",
+      "options": [
+        "Take its late finish minus its estimated duration.",
+        "Take its early finish minus its estimated duration.",
+        "Take its early start plus its estimated duration.",
+        "Take its early start"
+      ],
+      "answer": 0,
+      "category": "Schedule Management",
+      "explanation": "Late Start is calculated during the backward pass as: LS = LF - Duration."
+    },
+    {
+      "id": 16,
+      "question": "True or False: The Forward Pass is used through the activities to determine the total duration of the project.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "category": "Schedule Management",
+      "explanation": "The Forward Pass calculates Early Start (ES) and Early Finish (EF) dates through the network diagram to determine the total project duration / shortest completion date."
+    },
+    {
+      "id": 17,
+      "question": "True or False: Fast Tracking is the approach to re-plan the work and try to perform more overlapping sequential activities to be in parallel.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "category": "Schedule Management",
+      "explanation": "Fast Tracking compresses the project schedule by performing sequential activities in parallel instead of waiting for predecessor activities to complete."
+    },
+    {
+      "id": 18,
+      "question": "A cost can be either variable or fixed. Which of the following statements are correct (choose 2 answers)?",
+      "options": [
+        "Variable costs: These costs change with the amount of production. Examples include the cost of material, supplies, and wages.",
+        "Fixed costs: These costs do not change as production changes. Examples include the cost of setup, rent, utilities, etc.",
+        "Fixed costs: These costs change with the amount of production. Examples include the cost of material, supplies, and wages.",
+        "Variable costs: These costs do not change as production changes. Examples include the cost of setup, rent, utilities, etc."
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "category": "Cost Management",
+      "explanation": "Variable costs vary with production output (e.g., raw materials, direct hourly wages), while Fixed costs remain constant regardless of production level (e.g., rent, facility leasing)."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following is NOT the advantages of top-down estimating?",
+      "options": [
+        "Quick",
+        "Activities do not need to be identified",
+        "Less costly to create",
+        "More accurate"
+      ],
+      "answer": 3,
+      "category": "Cost Management",
+      "explanation": "Top-down (analogous) estimating is quick and less costly, but is significantly less accurate compared to bottom-up estimating."
+    },
+    {
+      "id": 20,
+      "question": "Which one of these most correctly defines contingency reserve?",
+      "options": [
+        "Per our lesson, management reserve and contingency are exactly the same.",
+        "Contingency reserve is not tied to any specific work packages nor activities.",
+        "Contingency reserve is tied to specific work packages or activities.",
+        "Contingency reserve is tied to only one specific milestone."
+      ],
+      "answer": 2,
+      "category": "Cost Management",
+      "explanation": "Contingency reserves address identified risks ('known-unknowns') and are directly tied to specific activities or work packages within the cost baseline."
+    },
+    {
+      "id": 21,
+      "question": "Earned value management integrates scope, cost, and schedule measures to:",
+      "options": [
+        "assess communication effectiveness among project team members.",
+        "assess whether all requirements were met",
+        "develop a preliminary budget.",
+        "assess project performance and progress."
+      ],
+      "answer": 3,
+      "category": "Cost & EVM",
+      "explanation": "Earned Value Management (EVM) combines scope, schedule, and cost measurements to assess and quantify overall project performance and progress."
+    },
+    {
+      "id": 22,
+      "question": "The discipline of quality management complements the discipline of project management. Both recognize all but one of the following:",
+      "options": [
+        "Customer satisfaction",
+        "Prevention over inspection",
+        "Continuous improvement",
+        "Project manager responsibility"
+      ],
+      "answer": 3,
+      "category": "Quality Management",
+      "explanation": "Modern quality management recognizes 'Management responsibility' (shared organizational leadership responsibility) rather than placing sole responsibility solely on the project manager."
+    },
+    {
+      "id": 23,
+      "question": "True or False: Product quality focuses on the project management processes used to meet project objectives.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 0,
+      "category": "Quality Management",
+      "explanation": "Product quality focuses on the deliverables and output characteristics, whereas process quality focuses on the management processes used."
+    },
+    {
+      "id": 24,
+      "question": "The Process Improvement Plan is:",
+      "options": [
+        "The number one component of the project management plan",
+        "A subsidiary, or component of the project management plan."
+      ],
+      "answer": 1,
+      "category": "Quality Management",
+      "explanation": "The Process Improvement Plan is a subsidiary component of the overall Project Management Plan."
+    },
+    {
+      "id": 25,
+      "question": "True or False: Your role as the project manager during quality assurance is to work with a quality assurance manager who will create a test plan and test cases which will be used to test the product you are creating in order to prevent defects from reaching your customer.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 0,
+      "category": "Quality Management",
+      "explanation": "Creating test plans and executing test cases to find defects in the product is Quality Control (QC). Quality Assurance (QA) audits the processes and overall quality system."
+    },
+    {
+      "id": 26,
+      "question": "True or False: Performing quality control within the context of a project involves applying the planned, systematic quality activities to ensure that the project correctly employs all processes needed to meet project objectives and product requirements.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 0,
+      "category": "Quality Management",
+      "explanation": "Applying planned systematic activities to ensure the project employs appropriate processes is the definition of Quality Assurance (QA), not Quality Control (QC)."
+    },
+    {
+      "id": 27,
+      "question": "True or False: Influence means you have the right to apply resources, make decisions and give approvals.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 0,
+      "category": "Resource Management",
+      "explanation": "The formal right to apply resources, make decisions, and grant approvals is Authority. Influence is interpersonal power to motivate and guide without direct authority."
+    },
+    {
+      "id": 28,
+      "question": "True or False: Project Human Resource Management includes the processes that define the tasks and assign them to suitable resources, and motivate project team to complete the tasks.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Resource Management",
+      "explanation": "Project Resource/HR Management organizes, manages, and leads the project team, assigning roles and motivating team members."
+    },
+    {
+      "id": 29,
+      "question": "Which one is correct view of conflict?",
+      "options": [
+        "Caused by troublemakers",
+        "Always bad",
+        "Natural result of change",
+        "Must be suppressed"
+      ],
+      "answer": 2,
+      "category": "Resource & Conflict Management",
+      "explanation": "Contemporary management views conflict as an inevitable and natural consequence of change and team diversity, which can lead to healthy innovation when managed properly."
+    },
+    {
+      "id": 30,
+      "question": "Which one of below situations is not correct when discussing about Responsibility Assignment Matrix?",
+      "options": [
+        "Two team members are consulted about the same task.",
+        "Two team members are informed about the same task.",
+        "Two team members are responsible for the same task.",
+        "Two team members are accountable for the same task."
+      ],
+      "answer": 3,
+      "category": "Resource Management",
+      "explanation": "In a RACI/RAM matrix, there should be exactly ONE person Accountable (A) for any given activity to prevent ambiguity and lack of ownership."
+    },
+    {
+      "id": 31,
+      "question": "Some of the major sources of conflict that a project manager may influence are:",
+      "options": [
+        "Project management, project priorities, project team",
+        "Personality conflict, schedules, resources",
+        "Project charter, schedules, resources",
+        "Personality conflict, network diagram, resources"
+      ],
+      "answer": 1,
+      "category": "Resource & Conflict Management",
+      "explanation": "The primary sources of project conflict include Schedules, Priorities, Resources, Technical opinions, and Personality clashes."
+    },
+    {
+      "id": 32,
+      "question": "Which one of these is not the approaches to conflict discussed in the Project Human Resources Management Lesson?",
+      "options": [
+        "Confronting",
+        "Compromising",
+        "Smoothing",
+        "Forcing",
+        "Avoiding",
+        "Challenging"
+      ],
+      "answer": 5,
+      "category": "Resource & Conflict Management",
+      "explanation": "The established PMBOK conflict resolution techniques are Confronting/Collaborating, Compromising, Smoothing, Forcing, and Avoiding. 'Challenging' is not one of them."
+    },
+    {
+      "id": 33,
+      "question": "What does RAM stand for:",
+      "options": [
+        "Responsibility Action Matrix",
+        "Responsibility Activity Matrix",
+        "Responsibility Ambiguity Matrix",
+        "Responsibility Assignment Matrix"
+      ],
+      "answer": 3,
+      "category": "Resource Management",
+      "explanation": "RAM stands for Responsibility Assignment Matrix (such as a RACI chart)."
+    },
+    {
+      "id": 34,
+      "question": "True or False: A project manager spends most of his/her time communicating.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Communications Management",
+      "explanation": "Project managers typically spend roughly 75% to 90% of their working time communicating with stakeholders, sponsors, and team members."
+    },
+    {
+      "id": 35,
+      "question": "You are beginning to staff your project. Which of the following will NOT be used in developing and/or communicating roles and responsibilities?",
+      "options": [
+        "WBS",
+        "Pareto chart",
+        "Responsibility Assignment Matrix",
+        "Organization chart"
+      ],
+      "answer": 1,
+      "category": "Resource Management",
+      "explanation": "A Pareto chart is a quality control tool (80/20 rule) used to identify frequency of defect causes, not for organizational staffing or assigning roles."
+    },
+    {
+      "id": 36,
+      "question": "Upward communication is communication to/from:",
+      "options": [
+        "Your senior management",
+        "Your social groups.",
+        "Your direct reports.",
+        "Your peers."
+      ],
+      "answer": 0,
+      "category": "Communications Management",
+      "explanation": "Upward communication flows between the project manager/team and senior executive management / sponsors."
+    },
+    {
+      "id": 37,
+      "question": "Which one is the correct matching of communication methods and the explanations?\nCommunication methods:\n(1) Interactive\n(2) Push\n(3) Pull\nExplanations:\n(a) Between two or more parties and multidirectional; the most efficient way to ensure common understanding.\n(b) Sent to recipients; does not ensure it was actually received and understood.\n(c) Recipients must access the information; works for large amounts of information or large audiences, each recipient accesses at their own discretion.",
+      "options": [
+        "(1)&(a), (2)&(b), (3)&(c)",
+        "(1)&(a), (2)&(c), (3)&(b)",
+        "(1)&(b), (2)&(c), (3)&(a)",
+        "(1)&(b), (2)&(a), (3)&(c)",
+        "(1)&(c), (2)&(a), (3)&(b)",
+        "(1)&(c), (2)&(b), (3)&(a)"
+      ],
+      "answer": 0,
+      "category": "Communications Management",
+      "explanation": "Interactive communication = multidirectional (meetings, calls); Push = sent directly without guaranteed understanding (emails, letters); Pull = stored for self-service access by large audiences (portals, repositories)."
+    },
+    {
+      "id": 38,
+      "question": "True or False: Performance reporting aims to inform stakeholders the good achievements of the project's objectives weekly or monthly.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "category": "Communications Management",
+      "explanation": "Performance reporting must provide an honest, objective representation of all project performance—including variance, delays, and cost overruns—not just good achievements."
+    },
+    {
+      "id": 39,
+      "question": "True or False: A positive risk is an opportunity; a negative risk is a threat.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 1,
+      "category": "Risk Management",
+      "explanation": "In risk management, risks with positive impacts are classified as opportunities, while risks with negative impacts are classified as threats."
+    },
+    {
+      "id": 40,
+      "question": "True or False: Risk management is a one-time process. You need to plan for all possible risks at the project beginning and then follow defined actions to control those risks until they are closed or cancelled.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": 0,
+      "category": "Risk Management",
+      "explanation": "Risk management is an ongoing, iterative process performed continuously throughout the entire project life cycle."
+    },
+    {
+      "id": 41,
+      "question": "If the response you choose is to mitigate a risk this means that:",
+      "options": [
+        "You actively do not consider the risk but establish contingency plan",
+        "You change your plans so that you eliminate the risk.",
+        "You change your plan so that another party will be responsible for the risk.",
+        "You create your plan to reduce the probability and/or the impact of the risk."
+      ],
+      "answer": 3,
+      "category": "Risk Management",
+      "explanation": "Mitigating a risk means taking proactive action to reduce the probability of occurrence and/or the potential negative impact."
+    },
+    {
+      "id": 42,
+      "question": "When you and your team know that a negative risk has a high likelihood of occurring and it will be very impactful if it does:",
+      "options": [
+        "You should not document the risk; it will upset your stakeholders.",
+        "You should develop a response to handle this risk.",
+        "You should all hope this risk does not occur.",
+        "You should wait a few weeks and see what changes."
+      ],
+      "answer": 1,
+      "category": "Risk Management",
+      "explanation": "High-probability and high-impact risks require immediate attention and the creation of an active Risk Response Plan."
+    },
+    {
+      "id": 43,
+      "question": "Who is the stakeholder that has the most influence on your current running project?",
+      "options": [
+        "Project Team",
+        "Investors",
+        "Competitors",
+        "Sponsor"
+      ],
+      "answer": 3,
+      "category": "Stakeholder Management",
+      "explanation": "The Project Sponsor provides executive backing, funding, and charter authorization, holding the highest governing influence over the running project."
+    },
+    {
+      "id": 44,
+      "question": "One way to classify your stakeholders is to use the Power/Interest Grid. If a stakeholder is low interest / high power, what should the Project Manager do?",
+      "options": [
+        "Monitor",
+        "Keep satisfied",
+        "Manage closely",
+        "Keep informed"
+      ],
+      "answer": 1,
+      "category": "Stakeholder Management",
+      "explanation": "According to the Power/Interest Grid, High Power / Low Interest stakeholders should be Kept Satisfied."
+    },
+    {
+      "id": 45,
+      "question": "You just came from a meeting with one of your project stakeholders, he knew well about your project and also its potential impacts, and actively engaged in ensuring that the project is a success. How would you classify him?",
+      "options": [
+        "Supportive",
+        "Neutral",
+        "Unaware",
+        "Leading"
+      ],
+      "answer": 3,
+      "category": "Stakeholder Management",
+      "explanation": "A stakeholder who is aware of the project and actively engaged in ensuring project success is classified at the 'Leading' engagement level."
+    },
+    {
+      "id": 46,
+      "question": "Identify the five engagement levels of stakeholders:",
+      "options": [
+        "Unaware, resistant, strong-willed, supportive, leading",
+        "Unaware, resistant, neutral, supportive, leading",
+        "Unaware, resistant, strong-willed, supportive, sponsor",
+        "Unaware, resistant, neutral, supportive, oblivious"
+      ],
+      "answer": 1,
+      "category": "Stakeholder Management",
+      "explanation": "The standard PMBOK stakeholder engagement levels are: Unaware, Resistant, Neutral, Supportive, and Leading."
+    },
+    {
+      "id": 47,
+      "question": "Your stakeholder register should not contain:",
+      "options": [
+        "Identification information",
+        "Assessment information",
+        "Stakeholder classification",
+        "Scope information"
+      ],
+      "answer": 3,
+      "category": "Stakeholder Management",
+      "explanation": "The Stakeholder Register contains identification, assessment, and classification info. Project scope details belong in the Scope Statement and WBS."
+    },
+    {
+      "id": 48,
+      "question": "Given 14,000 USD is the most likely of the estimated cost of the activity, 8,000 USD the optimistic value and 26,000 USD is the pessimistic one. By using the PERT (Program Evaluation and Review Technique) analysis to calculate the expected activity cost, which of the following is the result?",
+      "options": [
+        "16.000 USD",
+        "12.000 USD",
+        "15.000 USD",
+        "21.000 USD"
+      ],
+      "answer": 2,
+      "category": "Cost Management",
+      "explanation": "PERT Expected Cost E = (O + 4M + P) / 6 = (8,000 + 4 * 14,000 + 26,000) / 6 = (8,000 + 56,000 + 26,000) / 6 = 90,000 / 6 = 15,000 USD."
+    },
+    {
+      "id": 49,
+      "question": "You have a project to build a new fence. The fence will form a square. Each side is to take one day to build, and $1,000 has been budgeted per side. The sides are planned to be completed one after the other. Today is the end of day 3. Using the project status chart (Side 1: Complete, spent $1,000; Side 2: Complete, spent $900; Side 3: 50% done, spent $600; Side 4: 75% done, spent $600) to calculate project current CV:",
+      "options": [
+        "CV = $150",
+        "CV = -$250",
+        "CV = -$100",
+        "CV = $200",
+        "CV = $50",
+        "CV = $300"
+      ],
+      "answer": 0,
+      "category": "Cost & EVM",
+      "explanation": "EV = $1000 + $1000 + (50% * $1000) + (75% * $1000) = $3,250. AC = $1000 + $900 + $600 + $600 = $3,100. Cost Variance CV = EV - AC = $3,250 - $3,100 = +$150."
+    },
+    {
+      "id": 50,
+      "question": "In Earned Value Management Technique, you can compute the Schedule Performance Index (SPI) by applying which of following formula?",
+      "options": [
+        "SPI = EV / PV",
+        "SPI = SV / PV",
+        "SPI = CV / PV",
+        "SPI = AC / PV"
+      ],
+      "answer": 0,
+      "category": "Cost & EVM",
+      "explanation": "The Schedule Performance Index formula is SPI = EV / PV (Earned Value divided by Planned Value)."
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Quiz - Luyện tập & Kiểm tra</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-inner">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <span class="logo-text">QuizExam</span>
+            </div>
+            <button id="theme-toggle" class="icon-btn" aria-label="Đổi giao diện">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Dashboard: Quiz Selection -->
+        <section id="dashboard-section" class="panel active fade-in">
+            <div class="dashboard-header">
+                <div class="badge-tag">Danh sách đề thi</div>
+                <h1>Chọn bài kiểm tra</h1>
+                <p>Luyện tập kiến thức và kiểm tra đánh giá năng lực của bạn.</p>
+            </div>
+            <div id="quiz-list" class="quiz-list-layout">
+                <!-- Quizzes injected here via JS -->
+            </div>
+        </section>
+
+        <!-- Quiz Interface -->
+        <section id="quiz-section" class="panel hidden fade-in">
+            <div class="quiz-top-bar">
+                <div class="top-bar-left">
+                    <button id="back-btn" class="text-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                        <span>Danh sách bài thi</span>
+                    </button>
+                    <span id="current-mode-badge" class="mode-badge">Chế độ Học tập</span>
+                </div>
+                <div class="quiz-controls">
+                    <div class="control-item" id="category-filter-wrap">
+                        <label for="category-select" class="mode-label" style="display: flex; align-items: center; gap: 0.35rem;">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            <span>Chủ đề:</span>
+                        </label>
+                        <select id="category-select" class="category-select">
+                            <option value="all">Tất cả chủ đề</option>
+                        </select>
+                    </div>
+                    <div class="control-item" id="auto-advance-wrap">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="auto-advance-toggle" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <span class="mode-label">Tự chuyển câu</span>
+                    </div>
+                    <div class="control-item">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="view-mode-toggle">
+                            <span class="slider"></span>
+                        </label>
+                        <span class="mode-label">Hiện tất cả</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quiz-layout">
+                <div class="quiz-content-area">
+                    <div class="quiz-main single-mode" id="questions-container">
+                        <!-- Question Blocks Injected Here -->
+                    </div>
+                    
+                    <div class="quiz-bottom-nav" id="quiz-bottom-nav">
+                        <button id="main-prev-btn" class="secondary-btn">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                            <span>Câu trước</span>
+                        </button>
+                        
+                        <span id="question-indicator" class="question-indicator">Câu 1 / 10</span>
+                        
+                        <button id="main-next-btn" class="primary-btn">
+                            <span>Câu tiếp</span>
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <aside class="quiz-sidebar">
+                    <div class="sidebar-header">
+                        <span class="sidebar-title">Bảng câu hỏi</span>
+                        <span id="progress-text" class="progress-pill">0/0</span>
+                    </div>
+                    <div class="question-nav-grid" id="question-nav-grid">
+                        <!-- Nav Buttons Injected Here -->
+                    </div>
+                    
+                    <div class="nav-legend">
+                        <div class="legend-item"><span class="box"></span> Chưa làm</div>
+                        <div class="legend-item"><span class="box answered"></span> Đã làm</div>
+                        <div class="legend-item"><span class="box flagged"></span> Đánh dấu</div>
+                    </div>
+
+                    <div class="sidebar-actions">
+                        <div class="nav-pagination-btns">
+                            <button id="prev-btn" class="secondary-btn hidden">Câu trước</button>
+                            <button id="next-btn" class="secondary-btn hidden">Câu sau</button>
+                        </div>
+                        <button id="submit-quiz-btn" class="primary-btn submit-full-btn">Nộp bài</button>
+                        <button id="exit-review-btn" class="secondary-btn submit-full-btn hidden">Trở lại kết quả</button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Result Section -->
+        <section id="result-section" class="panel hidden fade-in">
+            <div class="result-content">
+                <div class="result-badge" id="result-badge-text">Kết quả kiểm tra</div>
+                <h2>Hoàn thành bài thi</h2>
+                <p id="result-subtitle">Bạn đã nộp bài thành công. Xem điểm số và đáp án chi tiết bên dưới.</p>
+                <div class="score-card">
+                    <div class="score-label">Điểm số đạt được</div>
+                    <div class="score-display">
+                        <span id="final-score">0</span><span class="score-total">/0</span>
+                    </div>
+                    <div id="score-percentage" class="score-percentage">0%</div>
+                </div>
+
+                <!-- Category Breakdown Section -->
+                <div id="category-breakdown-container" class="category-breakdown-container">
+                    <div class="breakdown-title">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <span>Phân tích kết quả theo chủ đề</span>
+                    </div>
+                    <div id="category-breakdown-list" class="category-breakdown-list">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+
+                <div class="result-actions">
+                    <button id="review-btn" class="primary-btn">Xem lại đáp án</button>
+                    <button id="retry-btn" class="secondary-btn">Làm lại</button>
+                    <button id="home-btn" class="secondary-btn">Về danh sách</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Mode Selection -->
+    <div id="mode-select-modal" class="modal-overlay hidden">
+        <div class="modal-content panel mode-modal-content">
+            <div class="modal-header">
+                <h3 id="mode-modal-title">Chọn chế độ làm bài</h3>
+                <button id="close-mode-modal" class="icon-btn-sm" aria-label="Đóng">✕</button>
+            </div>
+            <p class="modal-desc">Chọn hình thức phù hợp với mục đích ôn luyện của bạn.</p>
+            
+            <div class="mode-cards-grid">
+                <div class="mode-card" id="mode-practice-card">
+                    <div class="mode-card-icon practice-icon">📖</div>
+                    <div class="mode-card-info">
+                        <h4>Chế độ Học tập</h4>
+                        <p>Hiển thị đáp án đúng/sai ngay sau khi chọn câu hỏi để dễ ghi nhớ.</p>
+                    </div>
+                </div>
+                
+                <div class="mode-card" id="mode-exam-card">
+                    <div class="mode-card-icon exam-icon">📝</div>
+                    <div class="mode-card-info">
+                        <h4>Chế độ Kiểm tra</h4>
+                        <p>Không hiển thị đáp án khi làm. Chấm điểm và xem lại toàn bộ đáp án sau khi nộp bài.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shuffle Settings -->
+            <div class="modal-settings-section">
+                <div class="setting-title">Tùy chọn xáo trộn đề</div>
+                <div class="setting-row">
+                    <span class="setting-label">Đảo thứ tự câu hỏi</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="shuffle-questions-toggle" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-row">
+                    <span class="setting-label">Đảo thứ tự đáp án (A, B, C, D)</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="shuffle-options-toggle" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Resume Prompt -->
+    <div id="resume-modal" class="modal-overlay hidden">
+        <div class="modal-content panel">
+            <h3>Tiếp tục bài làm?</h3>
+            <p id="resume-modal-desc">Bạn có tiến trình làm bài dở từ trước. Bạn muốn tiếp tục hay làm lại từ đầu?</p>
+            <div class="modal-actions">
+                <button id="modal-restart" class="secondary-btn">Làm lại từ đầu</button>
+                <button id="modal-resume" class="primary-btn">Tiếp tục làm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="app.js"></script>
+</body>
+</html>
