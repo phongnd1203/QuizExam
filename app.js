@@ -35,6 +35,7 @@ const categoryBreakdownContainer = document.getElementById('category-breakdown-c
 const categoryBreakdownList = document.getElementById('category-breakdown-list');
 const reviewBtn = document.getElementById('review-btn');
 const retryBtn = document.getElementById('retry-btn');
+const retryIncorrectBtn = document.getElementById('retry-incorrect-btn');
 const homeBtn = document.getElementById('home-btn');
 
 // Mode Select Modal DOM
@@ -1078,6 +1079,14 @@ function finishQuiz() {
         resultBadgeText.textContent = currentQuizMode === 'practice' ? 'Kết quả học tập' : 'Kết quả kiểm tra';
     }
 
+    if (retryIncorrectBtn) {
+        if (currentQuizMode === 'practice' && score < quizData.questions.length) {
+            retryIncorrectBtn.classList.remove('hidden');
+        } else {
+            retryIncorrectBtn.classList.add('hidden');
+        }
+    }
+
     renderCategoryBreakdown();
 }
 
@@ -1167,6 +1176,54 @@ if (homeBtn) {
 if (retryBtn) {
     retryBtn.addEventListener('click', () => {
         startQuiz(pendingQuizMeta, currentQuizMode === 'review' ? 'exam' : currentQuizMode, false);
+    });
+}
+
+if (retryIncorrectBtn) {
+    retryIncorrectBtn.addEventListener('click', () => {
+        // Clear correct answers from progress and set completed to false
+        const progressKey = `quizProgress_${currentQuizMode}_${currentQuizId}`;
+        let savedProgress = {};
+        try {
+            savedProgress = JSON.parse(localStorage.getItem(progressKey)) || {};
+        } catch (e) {}
+
+        const newUserAnswers = [...userAnswers];
+        let firstIncorrectIndex = -1;
+
+        quizData.questions.forEach((q, idx) => {
+            const uAns = newUserAnswers[idx];
+            if (uAns === null || uAns === undefined) {
+                if (firstIncorrectIndex === -1) firstIncorrectIndex = idx;
+                return;
+            }
+
+            let isCorrect = false;
+            if (Array.isArray(q.answer)) {
+                if (Array.isArray(uAns) && q.answer.length === uAns.length && q.answer.every(a => uAns.includes(a))) {
+                    isCorrect = true;
+                }
+            } else {
+                if (uAns === q.answer) {
+                    isCorrect = true;
+                }
+            }
+
+            if (!isCorrect) {
+                newUserAnswers[idx] = null; // Reset incorrect answer
+                if (firstIncorrectIndex === -1) firstIncorrectIndex = idx;
+            }
+        });
+
+        savedProgress.userAnswers = newUserAnswers;
+        savedProgress.completed = false;
+        savedProgress.currentQuestionIndex = firstIncorrectIndex !== -1 ? firstIncorrectIndex : 0;
+        
+        try {
+            localStorage.setItem(progressKey, JSON.stringify(savedProgress));
+        } catch (e) {}
+
+        startQuiz(pendingQuizMeta, currentQuizMode, true);
     });
 }
 
