@@ -5,10 +5,7 @@
     {
       "id": 1,
       "question": "True or False: A Project is defined as being unique and temporary, with a defined start and finish.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 0,
       "category": "Project Foundations",
       "explanation": "A project is defined as a temporary endeavor undertaken to create a unique product, service, or result. It has a DEFINED start and finish."
@@ -43,12 +40,7 @@
     {
       "id": 4,
       "question": "A project manager has little project experience, but she has been assigned as the project manager of a new project. Because she will be working in a matrix organization to complete her project, she can expect communications to be:",
-      "options": [
-        "Simple",
-        "Open and accurate",
-        "Complex",
-        "Hard to automate"
-      ],
+      "options": ["Simple", "Open and accurate", "Complex", "Hard to automate"],
       "answer": 2,
       "category": "Organizational Structures",
       "explanation": "Communications in a matrix organization are complex due to dual reporting relationships (team members report to both functional managers and project managers)."
@@ -69,10 +61,7 @@
     {
       "id": 6,
       "question": "True or False: The Project Charter is a document that formally authorizes the existence of a project. It also documents initial requirements that satisfy the stakeholder's needs and expectations.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Project Integration Management",
       "explanation": "The Project Charter formally authorizes the project, gives authority to the project manager, and outlines high-level requirements and stakeholder expectations."
@@ -113,10 +102,7 @@
         "Time Management Plan",
         "Cost Management Plan"
       ],
-      "answer": [
-        2,
-        3
-      ],
+      "answer": [2, 3],
       "category": "Scope Management",
       "explanation": "The outputs of Plan Scope Management are Scope Management Plan and Requirements Management Plan. Time Management Plan and Cost Management Plan are outputs of Schedule and Cost processes."
     },
@@ -202,10 +188,7 @@
     {
       "id": 16,
       "question": "True or False: The Forward Pass is used through the activities to determine the total duration of the project.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 0,
       "category": "Schedule Management",
       "explanation": "The Forward Pass calculates Early Start (ES) and Early Finish (EF) dates through the network diagram to determine the total project duration / shortest completion date."
@@ -213,10 +196,7 @@
     {
       "id": 17,
       "question": "True or False: Fast Tracking is the approach to re-plan the work and try to perform more overlapping sequential activities to be in parallel.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 0,
       "category": "Schedule Management",
       "explanation": "Fast Tracking compresses the project schedule by performing sequential activities in parallel instead of waiting for predecessor activities to complete."
@@ -230,10 +210,7 @@
         "Fixed costs: These costs change with the amount of production. Examples include the cost of material, supplies, and wages.",
         "Variable costs: These costs do not change as production changes. Examples include the cost of setup, rent, utilities, etc."
       ],
-      "answer": [
-        0,
-        1
-      ],
+      "answer": [0, 1],
       "category": "Cost Management",
       "explanation": "Variable costs vary with production output (e.g., raw materials, direct hourly wages), while Fixed costs remain constant regardless of production level (e.g., rent, facility leasing)."
     },
@@ -292,10 +269,7 @@
     {
       "id": 23,
       "question": "True or False: Product quality focuses on the project management processes used to meet project objectives.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 0,
       "category": "Quality Management",
       "explanation": "Product quality focuses on the deliverables and output characteristics, whereas process quality focuses on the management processes used."
@@ -314,10 +288,7 @@
     {
       "id": 25,
       "question": "True or False: Your role as the project manager during quality assurance is to work with a quality assurance manager who will create a test plan and test cases which will be used to test the product you are creating in order to prevent defects from reaching your customer.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 0,
       "category": "Quality Management",
       "explanation": "Creating test plans and executing test cases to find defects in the product is Quality Control (QC). Quality Assurance (QA) audits the processes and overall quality system."
@@ -325,10 +296,7 @@
     {
       "id": 26,
       "question": "True or False: Performing quality control within the context of a project involves applying the planned, systematic quality activities to ensure that the project correctly employs all processes needed to meet project objectives and product requirements.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 0,
       "category": "Quality Management",
       "explanation": "Applying planned systematic activities to ensure the project employs appropriate processes is the definition of Quality Assurance (QA), not Quality Control (QC)."
@@ -336,10 +304,7 @@
     {
       "id": 27,
       "question": "True or False: Influence means you have the right to apply resources, make decisions and give approvals.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 0,
       "category": "Resource Management",
       "explanation": "The formal right to apply resources, make decisions, and grant approvals is Authority. Influence is interpersonal power to motivate and guide without direct authority."
@@ -347,10 +312,7 @@
     {
       "id": 28,
       "question": "True or False: Project Human Resource Management includes the processes that define the tasks and assign them to suitable resources, and motivate project team to complete the tasks.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Resource Management",
       "explanation": "Project Resource/HR Management organizes, manages, and leads the project team, assigning roles and motivating team members."
@@ -425,10 +387,7 @@
     {
       "id": 34,
       "question": "True or False: A project manager spends most of his/her time communicating.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Communications Management",
       "explanation": "Project managers typically spend roughly 75% to 90% of their working time communicating with stakeholders, sponsors, and team members."
@@ -477,10 +436,7 @@
     {
       "id": 38,
       "question": "True or False: Performance reporting aims to inform stakeholders the good achievements of the project's objectives weekly or monthly.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 1,
       "category": "Communications Management",
       "explanation": "Performance reporting must provide an honest, objective representation of all project performance—including variance, delays, and cost overruns—not just good achievements."
@@ -488,10 +444,7 @@
     {
       "id": 39,
       "question": "True or False: A positive risk is an opportunity; a negative risk is a threat.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Risk Management",
       "explanation": "In risk management, risks with positive impacts are classified as opportunities, while risks with negative impacts are classified as threats."
@@ -499,10 +452,7 @@
     {
       "id": 40,
       "question": "True or False: Risk management is a one-time process. You need to plan for all possible risks at the project beginning and then follow defined actions to control those risks until they are closed or cancelled.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 0,
       "category": "Risk Management",
       "explanation": "Risk management is an ongoing, iterative process performed continuously throughout the entire project life cycle."
@@ -536,12 +486,7 @@
     {
       "id": 43,
       "question": "Who is the stakeholder that has the most influence on your current running project?",
-      "options": [
-        "Project Team",
-        "Investors",
-        "Competitors",
-        "Sponsor"
-      ],
+      "options": ["Project Team", "Investors", "Competitors", "Sponsor"],
       "answer": 3,
       "category": "Stakeholder Management",
       "explanation": "The Project Sponsor provides executive backing, funding, and charter authorization, holding the highest governing influence over the running project."
@@ -562,12 +507,7 @@
     {
       "id": 45,
       "question": "You just came from a meeting with one of your project stakeholders, he knew well about your project and also its potential impacts, and actively engaged in ensuring that the project is a success. How would you classify him?",
-      "options": [
-        "Supportive",
-        "Neutral",
-        "Unaware",
-        "Leading"
-      ],
+      "options": ["Supportive", "Neutral", "Unaware", "Leading"],
       "answer": 3,
       "category": "Stakeholder Management",
       "explanation": "A stakeholder who is aware of the project and actively engaged in ensuring project success is classified at the 'Leading' engagement level."
@@ -601,12 +541,7 @@
     {
       "id": 48,
       "question": "Given 14,000 USD is the most likely of the estimated cost of the activity, 8,000 USD the optimistic value and 26,000 USD is the pessimistic one. By using the PERT (Program Evaluation and Review Technique) analysis to calculate the expected activity cost, which of the following is the result?",
-      "options": [
-        "16.000 USD",
-        "12.000 USD",
-        "15.000 USD",
-        "21.000 USD"
-      ],
+      "options": ["16.000 USD", "12.000 USD", "15.000 USD", "21.000 USD"],
       "answer": 2,
       "category": "Cost Management",
       "explanation": "PERT Expected Cost E = (O + 4M + P) / 6 = (8,000 + 4 * 14,000 + 26,000) / 6 = (8,000 + 56,000 + 26,000) / 6 = 90,000 / 6 = 15,000 USD."

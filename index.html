@@ -1,227 +1,825 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal Quiz - Luyện tập & Kiểm tra</title>
+<!doctype html>
+<html lang="vi" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMG201c Exam & Knowledge Hub - Luyện Thi & Tài Liệu Toàn Diện</title>
     <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- KaTeX CSS for Math Rendering -->
+    <link rel="stylesheet" href="lib/katex.min.css" />
     <!-- Main Styles -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Reading Scroll Progress Bar -->
+    <div id="reading-progress-bar" class="reading-progress-bar"></div>
+
+    <!-- Application Header -->
     <header class="app-header">
-        <div class="header-inner">
-            <div class="logo">
-                <div class="logo-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                </div>
-                <span class="logo-text">QuizExam</span>
-            </div>
-            <button id="theme-toggle" class="icon-btn" aria-label="Đổi giao diện">
-                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
-            </button>
+      <div class="header-inner">
+        <div class="logo" id="app-logo">
+          <div class="logo-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <span class="logo-text">PMG201c</span>
         </div>
+
+        <!-- Navigation Tabs (Minimal Segmented Controls) -->
+        <nav class="header-nav-tabs" aria-label="Main Navigation">
+          <button id="nav-tab-articles" class="nav-tab-btn active">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            <span>Tài liệu</span>
+          </button>
+          <button id="nav-tab-quizzes" class="nav-tab-btn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Trắc nghiệm</span>
+          </button>
+          <button id="nav-tab-glossary" class="nav-tab-btn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>Thuật ngữ & EVM</span>
+          </button>
+          <button id="nav-tab-eos" class="nav-tab-btn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+              ></polygon>
+            </svg>
+            <span>Bí kíp EOS</span>
+          </button>
+        </nav>
+
+        <button id="theme-toggle" class="icon-btn" aria-label="Đổi giao diện">
+          <svg
+            class="sun-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line>
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main class="container">
-        <!-- Dashboard: Quiz Selection -->
-        <section id="dashboard-section" class="panel active fade-in">
-            <div class="dashboard-header">
-                <div class="badge-tag">Danh sách đề thi</div>
-                <h1>Chọn bài kiểm tra</h1>
-                <p>Luyện tập kiến thức và kiểm tra đánh giá năng lực của bạn.</p>
+      <!-- ═══════════════════════════════════════════════════════════════════
+ TAB 1: KHO BÀI VIẾT & TÀI LIỆU ÔN TẬP (ARTICLES TAB)
+ ═══════════════════════════════════════════════════════════════════ -->
+      <section id="articles-tab-content" class="tab-pane active fade-in">
+        <!-- 1.1 Articles Listing View -->
+        <div id="articles-list-section" class="articles-list-view">
+          <div class="articles-hub-header">
+            <div class="hub-hero">
+              <div class="hero-text">
+                <div class="badge-tag">
+                  Kho Kiến Thức Quản Trị Dự Án PMG201c
+                </div>
+                <h1>Tài Liệu Ôn Tập & Đề Thi Mẫu Chuẩn PE</h1>
+                <p>
+                  Bao gồm bách khoa từ điển thuật ngữ, bài giảng lý thuyết 4
+                  buổi, đề thi thực chiến SP26/SU26 và 11 bộ đề mở full lời
+                  giải.
+                </p>
+              </div>
+              <div class="hero-stats">
+                <span class="stat-pill" id="articles-count-badge"
+                  >33 bài viết</span
+                >
+                <span class="stat-pill">9 Miền kiến thức</span>
+                <span class="stat-pill">100% Chuẩn EOS</span>
+              </div>
             </div>
-            <div id="quiz-list" class="quiz-list-layout">
-                <!-- Quizzes injected here via JS -->
+
+            <!-- Search Bar -->
+            <div class="articles-search-bar">
+              <div class="search-input-wrap">
+                <svg
+                  class="search-icon-svg"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input
+                  type="text"
+                  id="article-search-input"
+                  class="article-search-input"
+                  placeholder="Tìm kiếm theo tiêu đề, từ khóa (CPM, EVM, RACI, Shopee, WBS, SMART, Charter)..."
+                />
+                <button
+                  id="article-clear-search"
+                  class="search-clear-btn hidden"
+                  aria-label="Xóa tìm kiếm"
+                ></button>
+              </div>
             </div>
-        </section>
 
-        <!-- Quiz Interface -->
-        <section id="quiz-section" class="panel hidden fade-in">
-            <div class="quiz-top-bar">
-                <div class="top-bar-left">
-                    <button id="back-btn" class="text-btn">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-                        <span>Danh sách bài thi</span>
-                    </button>
-                    <span id="current-mode-badge" class="mode-badge">Chế độ Học tập</span>
-                </div>
-                <div class="quiz-controls">
-                    <div class="control-item" id="category-filter-wrap">
-                        <label for="category-select" class="mode-label" style="display: flex; align-items: center; gap: 0.35rem;">
-                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                            <span>Chủ đề:</span>
-                        </label>
-                        <select id="category-select" class="category-select">
-                            <option value="all">Tất cả chủ đề</option>
-                        </select>
-                    </div>
-                    <div class="control-item" id="auto-advance-wrap">
-                        <label class="toggle-switch">
-                            <input type="checkbox" id="auto-advance-toggle" checked>
-                            <span class="slider"></span>
-                        </label>
-                        <span class="mode-label">Tự chuyển câu</span>
-                    </div>
-                    <div class="control-item">
-                        <label class="toggle-switch">
-                            <input type="checkbox" id="view-mode-toggle">
-                            <span class="slider"></span>
-                        </label>
-                        <span class="mode-label">Hiện tất cả</span>
-                    </div>
-                </div>
+            <!-- Category Filter Pills -->
+            <div id="category-pills" class="category-pills-scroll">
+              <!-- Injected via articles.js -->
             </div>
-            
-            <div class="quiz-layout">
-                <div class="quiz-content-area">
-                    <div class="quiz-main single-mode" id="questions-container">
-                        <!-- Question Blocks Injected Here -->
-                    </div>
-                    
-                    <div class="quiz-bottom-nav" id="quiz-bottom-nav">
-                        <button id="main-prev-btn" class="secondary-btn">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-                            <span>Câu trước</span>
-                        </button>
-                        
-                        <span id="question-indicator" class="question-indicator">Câu 1 / 10</span>
-                        
-                        <button id="main-next-btn" class="primary-btn">
-                            <span>Câu tiếp</span>
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </button>
-                    </div>
-                </div>
-                
-                <aside class="quiz-sidebar">
-                    <div class="sidebar-header">
-                        <span class="sidebar-title">Bảng câu hỏi</span>
-                        <span id="progress-text" class="progress-pill">0/0</span>
-                    </div>
-                    <div class="question-nav-grid" id="question-nav-grid">
-                        <!-- Nav Buttons Injected Here -->
-                    </div>
-                    
-                    <div class="nav-legend">
-                        <div class="legend-item"><span class="box"></span> Chưa làm</div>
-                        <div class="legend-item"><span class="box answered"></span> Đã làm</div>
-                        <div class="legend-item"><span class="box flagged"></span> Đánh dấu</div>
-                    </div>
 
-                    <div class="sidebar-actions">
-                        <div class="nav-pagination-btns">
-                            <button id="prev-btn" class="secondary-btn hidden">Câu trước</button>
-                            <button id="next-btn" class="secondary-btn hidden">Câu sau</button>
-                        </div>
-                        <button id="submit-quiz-btn" class="primary-btn submit-full-btn">Nộp bài</button>
-                        <button id="exit-review-btn" class="secondary-btn submit-full-btn hidden">Trở lại kết quả</button>
-                    </div>
-                </aside>
+            <!-- Tag Filter Chips -->
+            <div id="tag-filter-container" class="tag-filter-container">
+              <!-- Injected via articles.js -->
             </div>
-        </section>
+          </div>
 
-        <!-- Result Section -->
-        <section id="result-section" class="panel hidden fade-in">
-            <div class="result-content">
-                <div class="result-badge" id="result-badge-text">Kết quả kiểm tra</div>
-                <h2>Hoàn thành bài thi</h2>
-                <p id="result-subtitle">Bạn đã nộp bài thành công. Xem điểm số và đáp án chi tiết bên dưới.</p>
-                <div class="score-card">
-                    <div class="score-label">Điểm số đạt được</div>
-                    <div class="score-display">
-                        <span id="final-score">0</span><span class="score-total">/0</span>
-                    </div>
-                    <div id="score-percentage" class="score-percentage">0%</div>
-                </div>
+          <!-- Articles Grid -->
+          <div id="articles-grid" class="articles-grid-layout">
+            <!-- Cards Injected via articles.js -->
+          </div>
+        </div>
 
-                <!-- Category Breakdown Section -->
-                <div id="category-breakdown-container" class="category-breakdown-container">
-                    <div class="breakdown-title">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                        <span>Phân tích kết quả theo chủ đề</span>
-                    </div>
-                    <div id="category-breakdown-list" class="category-breakdown-list">
-                        <!-- Injected via JS -->
-                    </div>
-                </div>
+        <!-- 1.2 Article Reader Detail View (Hidden by default) -->
+        <div
+          id="article-detail-section"
+          class="article-detail-view hidden fade-in"
+        >
+          <div class="reader-header-toolbar">
+            <button id="back-to-articles-btn" class="secondary-btn">
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              <span>Quay lại danh sách</span>
+            </button>
 
-                <div class="result-actions">
-                    <button id="review-btn" class="primary-btn">Xem lại đáp án</button>
-                    <button id="retry-btn" class="secondary-btn">Làm lại</button>
-                    <button id="retry-incorrect-btn" class="secondary-btn hidden">Làm lại câu sai</button>
-                    <button id="home-btn" class="secondary-btn">Về danh sách</button>
-                </div>
+            <div class="reader-actions-right">
+              <button
+                id="copy-eos-btn"
+                class="primary-btn"
+                title="Sao chép toàn bộ nội dung dạng Text chuẩn nộp EOS"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path
+                    d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                  ></path>
+                </svg>
+                <span>Copy Text EOS</span>
+              </button>
+              <button
+                id="font-size-toggle"
+                class="secondary-btn"
+                title="Điều chỉnh kích cỡ chữ đọc"
+              >
+                <span class="size-label">A</span>
+              </button>
+              <button
+                id="print-article-btn"
+                class="secondary-btn"
+                title="In hoặc lưu file PDF"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                  <path
+                    d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+                  ></path>
+                  <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+                <span>In / PDF</span>
+              </button>
             </div>
-        </section>
+          </div>
+
+          <!-- Meta Banner -->
+          <div class="reader-meta-banner">
+            <span
+              id="article-detail-category"
+              class="article-detail-cat-badge"
+            ></span>
+            <h1 id="article-detail-title" class="article-detail-title"></h1>
+            <div id="article-detail-meta" class="article-detail-meta"></div>
+            <div id="article-detail-tags" class="article-detail-tags"></div>
+          </div>
+
+          <!-- 2-Column Reader Layout -->
+          <div class="reader-layout-grid">
+            <div class="reader-main-column">
+              <div
+                id="article-rendered-body"
+                class="article-rendered-content font-normal"
+              >
+                <!-- Rendered Markdown & KaTeX Injected Here -->
+              </div>
+
+              <!-- Adjacent Articles Navigation -->
+              <div class="adjacent-articles-row">
+                <div
+                  id="prev-article-btn"
+                  class="adjacent-article-card hidden"
+                ></div>
+                <div
+                  id="next-article-btn"
+                  class="adjacent-article-card hidden"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Sticky Table of Contents Sidebar -->
+            <aside class="article-toc-sidebar" aria-label="Mục lục bài viết">
+              <div class="toc-header">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="8" y1="6" x2="21" y2="6"></line>
+                  <line x1="8" y1="12" x2="21" y2="12"></line>
+                  <line x1="8" y1="18" x2="21" y2="18"></line>
+                  <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                  <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                  <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+                <span>Mục Lục Bài Viết</span>
+              </div>
+              <ul id="article-toc-list" class="toc-list">
+                <!-- Injected via articles.js -->
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+ TAB 2: LUYỆN TRẮC NGHIỆM (QUIZZES TAB)
+ ═══════════════════════════════════════════════════════════════════ -->
+      <section id="quizzes-tab-content" class="tab-pane hidden fade-in">
+        <!-- 2.1 Dashboard: Quiz Selection -->
+        <div id="dashboard-section" class="panel active">
+          <div class="dashboard-header">
+            <div class="badge-tag">Danh sách đề thi</div>
+            <h1>Chọn bài kiểm tra</h1>
+            <p>Luyện tập kiến thức và kiểm tra đánh giá năng lực của bạn.</p>
+          </div>
+          <div id="quiz-list" class="quiz-list-layout">
+            <!-- Quizzes injected here via app.js -->
+          </div>
+        </div>
+
+        <!-- 2.2 Quiz Interface -->
+        <div id="quiz-section" class="panel hidden fade-in">
+          <div class="quiz-top-bar">
+            <div class="top-bar-left">
+              <button id="back-btn" class="text-btn">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="19" y1="12" x2="5" y2="12"></line>
+                  <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                <span>Danh sách bài thi</span>
+              </button>
+              <span id="current-mode-badge" class="mode-badge"
+                >Chế độ Học tập</span
+              >
+            </div>
+
+            <div class="quiz-controls">
+              <!-- Category Filter Dropdown -->
+              <div class="control-item" id="category-filter-wrap">
+                <label
+                  for="category-select"
+                  class="mode-label"
+                  style="display: flex; align-items: center; gap: 0.35rem"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                    ></path>
+                  </svg>
+                  <span>Chủ đề:</span>
+                </label>
+                <select id="category-select" class="category-select">
+                  <option value="all">Tất cả chủ đề</option>
+                </select>
+              </div>
+
+              <!-- Auto-Advance Toggle -->
+              <div class="control-item" id="auto-advance-wrap">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="auto-advance-toggle" checked />
+                  <span class="slider"></span>
+                </label>
+                <span class="mode-label">Tự chuyển câu</span>
+              </div>
+
+              <!-- View Mode Toggle -->
+              <div class="control-item">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="view-mode-toggle" />
+                  <span class="slider"></span>
+                </label>
+                <span class="mode-label">Hiện tất cả</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-layout">
+            <div class="quiz-content-area">
+              <div class="quiz-main single-mode" id="questions-container">
+                <!-- Question Blocks Injected Here -->
+              </div>
+
+              <div class="quiz-bottom-nav" id="quiz-bottom-nav">
+                <button id="main-prev-btn" class="secondary-btn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                  </svg>
+                  <span>Câu trước</span>
+                </button>
+
+                <span id="question-indicator" class="question-indicator"
+                  >Câu 1 / 10</span
+                >
+
+                <button id="main-next-btn" class="primary-btn">
+                  <span>Câu tiếp</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <aside class="quiz-sidebar">
+              <div class="sidebar-header">
+                <span class="sidebar-title">Bảng câu hỏi</span>
+                <span id="progress-text" class="progress-pill">0/0</span>
+              </div>
+              <div class="question-nav-grid" id="question-nav-grid">
+                <!-- Nav Buttons Injected Here -->
+              </div>
+
+              <div class="nav-legend">
+                <div class="legend-item">
+                  <span class="box"></span> Chưa làm
+                </div>
+                <div class="legend-item">
+                  <span class="box answered"></span> Đã làm
+                </div>
+                <div class="legend-item">
+                  <span class="box flagged"></span> Đánh dấu
+                </div>
+              </div>
+
+              <div class="sidebar-actions">
+                <div class="nav-pagination-btns">
+                  <button id="prev-btn" class="secondary-btn hidden">
+                    Câu trước
+                  </button>
+                  <button id="next-btn" class="secondary-btn hidden">
+                    Câu sau
+                  </button>
+                </div>
+                <button
+                  id="submit-quiz-btn"
+                  class="primary-btn submit-full-btn"
+                >
+                  Nộp bài
+                </button>
+                <button
+                  id="exit-review-btn"
+                  class="secondary-btn submit-full-btn hidden"
+                >
+                  Trở lại kết quả
+                </button>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <!-- 2.3 Result Section -->
+        <div id="result-section" class="panel hidden fade-in">
+          <div class="result-content">
+            <div class="result-badge" id="result-badge-text">
+              Kết quả kiểm tra
+            </div>
+            <h2>Hoàn thành bài thi</h2>
+            <p id="result-subtitle">
+              Bạn đã nộp bài thành công. Xem điểm số và đáp án chi tiết bên
+              dưới.
+            </p>
+            <div class="score-card">
+              <div class="score-label">Điểm số đạt được</div>
+              <div class="score-display">
+                <span id="final-score">0</span
+                ><span class="score-total">/0</span>
+              </div>
+              <div id="score-percentage" class="score-percentage">0%</div>
+            </div>
+
+            <!-- Category Breakdown Section -->
+            <div
+              id="category-breakdown-container"
+              class="category-breakdown-container"
+            >
+              <div class="breakdown-title">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+                <span>Phân tích kết quả theo chủ đề</span>
+              </div>
+              <div id="category-breakdown-list" class="category-breakdown-list">
+                <!-- Injected via app.js -->
+              </div>
+            </div>
+
+            <div class="result-actions">
+              <button id="review-btn" class="primary-btn">
+                Xem lại đáp án
+              </button>
+              <button id="retry-btn" class="secondary-btn">Làm lại</button>
+              <button id="retry-incorrect-btn" class="secondary-btn hidden">
+                Làm lại câu sai
+              </button>
+              <button id="home-btn" class="secondary-btn">Về danh sách</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+ TAB 3: THUẬT NGỮ & MÁY TÍNH EVM (GLOSSARY TAB)
+ ═══════════════════════════════════════════════════════════════════ -->
+      <section id="glossary-tab-content" class="tab-pane hidden fade-in">
+        <div class="glossary-hero">
+          <div class="badge-tag">Tra Cứu Nhanh</div>
+          <h1>Bách Khoa Thuật Ngữ & Máy Tính EVM</h1>
+          <p>
+            Tra cứu nhanh hơn 60 từ viết tắt chuẩn PMBOK và công cụ tính toán tự
+            động các chỉ số EVM (PV, EV, CV, SV, CPI, SPI, EAC, ETC, VAC).
+          </p>
+        </div>
+
+        <!-- Glossary Search & Filter -->
+        <div class="articles-search-bar">
+          <div class="search-input-wrap">
+            <svg
+              class="search-icon-svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="text"
+              id="glossary-search-input"
+              class="article-search-input"
+              placeholder="Tìm kiếm nhanh thuật ngữ (BAC, PV, EV, AC, CPI, SPI, CPM, RACI, WBS, PDM, UAT)..."
+            />
+          </div>
+        </div>
+
+        <div id="alphabet-filter-container" class="alphabet-filter-row">
+          <!-- Alphabet filter injected here -->
+        </div>
+
+        <!-- Glossary Cards -->
+        <div id="glossary-cards-container" class="glossary-grid">
+          <!-- Injected via articles.js -->
+        </div>
+
+        <!-- Interactive EVM Calculator -->
+        <div class="evm-calc-section" id="evm-calculator-panel">
+          <div class="evm-calc-header">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#3b82f6"
+              stroke-width="2"
+            >
+              <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+              <line x1="8" y1="6" x2="16" y2="6"></line>
+              <line x1="16" y1="14" x2="16" y2="18"></line>
+              <path d="M16 10h.01"></path>
+              <path d="M12 10h.01"></path>
+              <path d="M8 10h.01"></path>
+              <path d="M12 14h.01"></path>
+              <path d="M8 14h.01"></path>
+              <path d="M12 18h.01"></path>
+              <path d="M8 18h.01"></path>
+            </svg>
+            <div>
+              <h2>Máy Tính Quản Trị Giá Trị Thu Được (EVM Calculator)</h2>
+              <p style="color: var(--text-muted); font-size: 0.85rem">
+                Nhập thông số đề bài để tự động tính toán và xuất lời giải chuẩn
+                EOS.
+              </p>
+            </div>
+          </div>
+
+          <div class="evm-inputs-grid">
+            <div class="evm-input-group">
+              <label for="evm-bac">Tổng ngân sách (BAC) [$ / VNĐ]</label>
+              <input
+                type="number"
+                id="evm-bac"
+                placeholder="Ví dụ: 500000"
+                value="500000"
+              />
+            </div>
+            <div class="evm-input-group">
+              <label for="evm-dac">Tổng thời gian (DAC) [tháng/tuần]</label>
+              <input
+                type="number"
+                id="evm-dac"
+                placeholder="Ví dụ: 12"
+                value="12"
+              />
+            </div>
+            <div class="evm-input-group">
+              <label for="evm-time">Thời điểm đánh giá (t) [tháng/tuần]</label>
+              <input
+                type="number"
+                id="evm-time"
+                placeholder="Ví dụ: 5"
+                value="5"
+              />
+            </div>
+            <div class="evm-input-group">
+              <label for="evm-progress"
+                >Khối lượng thực tế hoàn thành [%]</label
+              >
+              <input
+                type="number"
+                id="evm-progress"
+                placeholder="Ví dụ: 30"
+                value="30"
+              />
+            </div>
+            <div class="evm-input-group">
+              <label for="evm-ac">Chi phí thực tế đã chi (AC) [$ / VNĐ]</label>
+              <input
+                type="number"
+                id="evm-ac"
+                placeholder="Ví dụ: 120000"
+                value="120000"
+              />
+            </div>
+          </div>
+
+          <button id="evm-calculate-btn" class="primary-btn">
+            <svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Tính Toán Chỉ Số EVM</span>
+          </button>
+
+          <!-- Live Results -->
+          <div id="evm-result-card" class="evm-result-card"></div>
+        </div>
+      </section>
     </main>
 
     <!-- Modal for Mode Selection -->
     <div id="mode-select-modal" class="modal-overlay hidden">
-        <div class="modal-content panel mode-modal-content">
-            <div class="modal-header">
-                <h3 id="mode-modal-title">Chọn chế độ làm bài</h3>
-                <button id="close-mode-modal" class="icon-btn-sm" aria-label="Đóng">✕</button>
-            </div>
-            <p class="modal-desc">Chọn hình thức phù hợp với mục đích ôn luyện của bạn.</p>
-            
-            <div class="mode-cards-grid">
-                <div class="mode-card" id="mode-practice-card">
-                    <div class="mode-card-icon practice-icon">📖</div>
-                    <div class="mode-card-info">
-                        <h4>Chế độ Học tập</h4>
-                        <p>Hiển thị đáp án đúng/sai ngay sau khi chọn câu hỏi để dễ ghi nhớ.</p>
-                    </div>
-                </div>
-                
-                <div class="mode-card" id="mode-exam-card">
-                    <div class="mode-card-icon exam-icon">📝</div>
-                    <div class="mode-card-info">
-                        <h4>Chế độ Kiểm tra</h4>
-                        <p>Không hiển thị đáp án khi làm. Chấm điểm và xem lại toàn bộ đáp án sau khi nộp bài.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Shuffle Settings -->
-            <div class="modal-settings-section">
-                <div class="setting-title">Tùy chọn xáo trộn đề</div>
-                <div class="setting-row">
-                    <span class="setting-label">Đảo thứ tự câu hỏi</span>
-                    <label class="toggle-switch">
-                        <input type="checkbox" id="shuffle-questions-toggle" checked>
-                        <span class="slider"></span>
-                    </label>
-                </div>
-                <div class="setting-row">
-                    <span class="setting-label">Đảo thứ tự đáp án (A, B, C, D)</span>
-                    <label class="toggle-switch">
-                        <input type="checkbox" id="shuffle-options-toggle" checked>
-                        <span class="slider"></span>
-                    </label>
-                </div>
-            </div>
+      <div class="modal-content panel mode-modal-content">
+        <div class="modal-header">
+          <h3 id="mode-modal-title">Chọn chế độ làm bài</h3>
+          <button id="close-mode-modal" class="icon-btn-sm" aria-label="Đóng">
+            &times;
+          </button>
         </div>
+        <p class="modal-desc">
+          Chọn hình thức phù hợp với mục đích ôn luyện của bạn.
+        </p>
+
+        <div class="mode-cards-grid">
+          <div class="mode-card" id="mode-practice-card">
+            <div class="mode-card-icon practice-icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <div class="mode-card-info">
+              <h4>Chế độ Học tập</h4>
+              <p>
+                Hiển thị đáp án đúng/sai ngay sau khi chọn câu hỏi để dễ ghi
+                nhớ.
+              </p>
+            </div>
+          </div>
+
+          <div class="mode-card" id="mode-exam-card">
+            <div class="mode-card-icon exam-icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="mode-card-info">
+              <h4>Chế độ Kiểm tra</h4>
+              <p>
+                Không hiển thị đáp án khi làm. Chấm điểm và xem lại toàn bộ đáp
+                án sau khi nộp bài.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shuffle Settings -->
+        <div class="modal-settings-section">
+          <div class="setting-title">Tùy chọn xáo trộn đề</div>
+          <div class="setting-row">
+            <span class="setting-label">Đảo thứ tự câu hỏi</span>
+            <label class="toggle-switch">
+              <input type="checkbox" id="shuffle-questions-toggle" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="setting-row">
+            <span class="setting-label">Đảo thứ tự đáp án (A, B, C, D)</span>
+            <label class="toggle-switch">
+              <input type="checkbox" id="shuffle-options-toggle" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Modal for Resume Prompt -->
     <div id="resume-modal" class="modal-overlay hidden">
-        <div class="modal-content panel">
-            <h3>Tiếp tục bài làm?</h3>
-            <p id="resume-modal-desc">Bạn có tiến trình làm bài dở từ trước. Bạn muốn tiếp tục hay làm lại từ đầu?</p>
-            <div class="modal-actions">
-                <button id="modal-restart" class="secondary-btn">Làm lại từ đầu</button>
-                <button id="modal-resume" class="primary-btn">Tiếp tục làm</button>
-            </div>
+      <div class="modal-content panel">
+        <h3>Tiếp tục bài làm?</h3>
+        <p id="resume-modal-desc">
+          Bạn có tiến trình làm bài dở từ trước. Bạn muốn tiếp tục hay làm lại
+          từ đầu?
+        </p>
+        <div class="modal-actions">
+          <button id="modal-restart" class="secondary-btn">
+            Làm lại từ đầu
+          </button>
+          <button id="modal-resume" class="primary-btn">Tiếp tục làm</button>
         </div>
+      </div>
     </div>
 
-    <!-- Main Script -->
+    <!-- Scripts: Markdown, Math KaTeX, Mermaid Diagrams, Datasets and Handlers -->
+    <script src="lib/marked.min.js"></script>
+    <script src="lib/katex.min.js"></script>
+    <script src="lib/auto-render.min.js"></script>
+    <script src="lib/mermaid.min.js"></script>
+    <script src="data/quizzes-data.js"></script>
+    <script src="data/articles-data.js"></script>
+    <script src="articles.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

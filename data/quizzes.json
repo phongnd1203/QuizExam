@@ -1,0 +1,72 @@
+[
+  {
+    "id": "quiz_1",
+    "file": "data/quiz1.json",
+    "title": "Đề Thi FE PMG201c - SU26 FE (50 Câu)",
+    "description": "Bộ 50 câu hỏi trắc nghiệm ôn thi PMG201c kỳ Summer 2026 kèm đáp án và phân tích chi tiết.",
+    "questionCount": 50,
+    "categories": [
+      "Communications Management",
+      "Cost & EVM Management",
+      "Cost Management",
+      "Estimating Techniques",
+      "Integration Management",
+      "Organizational Structures",
+      "Project Constraints",
+      "Project Foundations",
+      "Project Integration Management",
+      "Project Roles",
+      "Quality Management",
+      "Resource Management",
+      "Risk Management",
+      "Schedule & Cost Estimating",
+      "Schedule Management",
+      "Scope Management",
+      "Stakeholder Management"
+    ]
+  },
+  {
+    "id": "quiz_2",
+    "file": "data/quiz2.json",
+    "title": "Đề Thi FE PMG201c - SU25 FE (50 Câu)",
+    "description": "Bộ 50 câu hỏi trắc nghiệm ôn thi PMG201c kỳ Summer 2025 kèm đáp án chuẩn và phân tích chi tiết.",
+    "questionCount": 50,
+    "categories": [
+      "Communications Management",
+      "Cost & EVM",
+      "Cost Management",
+      "Organizational Structures",
+      "Project Constraints",
+      "Project Foundations",
+      "Project Integration Management",
+      "Quality Management",
+      "Resource & Conflict Management",
+      "Resource Management",
+      "Risk Management",
+      "Schedule Management",
+      "Scope Management",
+      "Stakeholder Management"
+    ]
+  },
+  {
+    "id": "quiz_3",
+    "file": "data/quiz3.json",
+    "title": "Đề Thi FE PMG201c - FA25 RE (50 Câu)",
+    "description": "Bộ 50 câu hỏi trắc nghiệm ôn thi PMG201c kỳ Fall 2025 Retake kèm đáp án chuẩn và phân tích chi tiết.",
+    "questionCount": 50,
+    "categories": [
+      "Organizational Structures",
+      "Project Communications Management",
+      "Project Constraints",
+      "Project Cost Management",
+      "Project Foundations",
+      "Project Integration Management",
+      "Project Quality Management",
+      "Project Resource Management",
+      "Project Risk Management",
+      "Project Schedule Management",
+      "Project Scope Management",
+      "Project Stakeholder Management"
+    ]
+  }
+]

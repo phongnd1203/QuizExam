@@ -5,10 +5,7 @@
     {
       "id": 1,
       "question": "True or False: A Project is defined as being unique and temporary, with an undefined start and finish.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 1,
       "category": "Project Foundations",
       "explanation": "A project is defined as a temporary endeavor undertaken to create a unique product, service, or result. It has a DEFINED beginning and end (start and finish)."
@@ -16,10 +13,7 @@
     {
       "id": 2,
       "question": "True or False: In a projectized organization, team members are never assigned to the project full time.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 1,
       "category": "Organizational Structures",
       "explanation": "In a projectized (project-oriented) organization, most of the organization's resources are involved in project work, and team members are typically assigned to projects full time."
@@ -66,10 +60,7 @@
     {
       "id": 6,
       "question": "True or False: The Project Charter is a document that formally authorizes the existence of a project. It also documents initial requirements that satisfy the stakeholder's needs and expectations.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Project Integration Management",
       "explanation": "The Project Charter formally authorizes the project and provides the project manager with the authority to apply organizational resources to project activities, outlining high-level requirements and stakeholder expectations."
@@ -77,10 +68,7 @@
     {
       "id": 7,
       "question": "True or False: Scope creep represents the situation that the changes are made with the proper process and authority.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 1,
       "category": "Scope Management",
       "explanation": "Scope creep is the uncontrolled expansion to product or project scope without adjustments to time, cost, and resources (i.e. WITHOUT proper change control process or authority)."
@@ -107,10 +95,7 @@
         "Time Management Plan",
         "Cost Management Plan"
       ],
-      "answer": [
-        2,
-        3
-      ],
+      "answer": [2, 3],
       "category": "Scope Management",
       "explanation": "The outputs of 'Plan Scope Management' are only the Scope Management Plan and the Requirements Management Plan. Time (Schedule) Management Plan and Cost Management Plan are outputs of Plan Schedule Management and Plan Cost Management."
     },
@@ -130,10 +115,7 @@
     {
       "id": 11,
       "question": "True or False: When creating the WBS of the project, Project Manager decided to not include his management tasks into WBS as those tasks will be done by him and he knows well what he has to do in the project.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 0,
       "category": "Scope Management",
       "explanation": "False. The WBS must adhere to the 100% Rule, encompassing 100% of the work defined by the project scope, which explicitly includes Project Management activities."
@@ -168,10 +150,7 @@
     {
       "id": 14,
       "question": "True or False: If 'review online modules' needs to begin before 'develop online modules' can finish, that is called a start to finish relationship.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 0,
       "category": "Schedule Management",
       "explanation": "True. In a Start-to-Finish (SF) dependency, a successor activity cannot finish until a predecessor activity has started."
@@ -192,10 +171,7 @@
     {
       "id": 16,
       "question": "True or False: The Backward Pass is used through the activities to determine the total duration of the project.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 1,
       "category": "Schedule Management",
       "explanation": "False. The Forward Pass calculates early start/early finish and the total duration (critical path). The Backward Pass calculates late start, late finish, and float/slack."
@@ -203,10 +179,7 @@
     {
       "id": 17,
       "question": "True or False: Crashing is the approach to add more resources (labor, overtime, etc.) into the activities to reduce their durations.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 0,
       "category": "Schedule Management",
       "explanation": "True. Crashing is a schedule compression technique used to shorten the schedule duration for the least incremental cost by adding resources (overtime, extra personnel)."
@@ -220,10 +193,7 @@
         "When activity duration or resource quantities are uncertain, use bottom-up estimating techniques",
         "When detail is available and accuracy is needed, use top-down estimating techniques"
       ],
-      "answer": [
-        0,
-        1
-      ],
+      "answer": [0, 1],
       "category": "Schedule & Cost Estimating",
       "explanation": "Top-down (analogous) estimating is used early when information is uncertain/limited. Bottom-up estimating is used when detailed work packages are available and high accuracy is required."
     },
@@ -256,10 +226,7 @@
     {
       "id": 21,
       "question": "True or False: Earned value integrates scope, schedule and budget and uses monetary values to assess project status.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Cost Management",
       "explanation": "True. Earned Value Management (EVM) integrates the project scope baseline with cost baseline and schedule baseline, using monetary units to assess project performance."
@@ -280,10 +247,7 @@
     {
       "id": 23,
       "question": "True or False: Project quality focuses on the project management processes used to meet project objectives.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Quality Management",
       "explanation": "True. Project quality management addresses the management of the project and the deliverables of the project, ensuring processes meet quality standards."
@@ -302,10 +266,7 @@
     {
       "id": 25,
       "question": "True or False: Performing quality assurance within the context of a project involves taking actions to eliminate causes of unsatisfactory project performance.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Quality Management",
       "explanation": "True. Quality Assurance audits quality requirements and quality control measurements to ensure appropriate quality standards and eliminate root causes of poor performance."
@@ -313,10 +274,7 @@
     {
       "id": 26,
       "question": "True or False: Performing quality control within the context of a project involves applying the planned, systematic quality activities to ensure that the project correctly employs all processes needed to meet project objectives and product requirements.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 0,
       "category": "Quality Management",
       "explanation": "False. Applying planned systematic activities to ensure processes are employed correctly is the definition of Quality Assurance (QA). Quality Control (QC) monitors and records results of executing quality activities to assess performance and ensure outputs are complete and correct."
@@ -324,10 +282,7 @@
     {
       "id": 27,
       "question": "True or False: Influence means you have the right to apply resources, make decisions and give approvals.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 0,
       "category": "Resource Management",
       "explanation": "False. The right to apply resources, make decisions, and give approvals is 'Authority'. 'Influence' is the ability to persuade and impact people's decisions and behaviors without formal authority."
@@ -335,10 +290,7 @@
     {
       "id": 28,
       "question": "True or False: Project Human Resource Management includes the processes that organize, manage, and lead the project team.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Resource Management",
       "explanation": "True. Project Human Resource / Resource Management includes the processes that organize, manage, and lead the project team."
@@ -359,10 +311,7 @@
     {
       "id": 30,
       "question": "True or False: Each group of persons involved in the project should be assigned, and always needs to know their role and responsibility.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 0,
       "category": "Resource Management",
       "explanation": "True. Clear assignment of roles, responsibilities, and authorities (e.g. through a RACI chart) is essential for project team success."
@@ -383,12 +332,7 @@
     {
       "id": 32,
       "question": "You and another project manager disagree over whether a team member should work on your team or on her team. You decide that the team member can work for the other project manager and suppose that the other project manager will support you in the future. The truth is you wanted this person working on your project. The conflict resolution approach you have used is:",
-      "options": [
-        "Compromising",
-        "Smoothing",
-        "Confronting",
-        "Forcing"
-      ],
+      "options": ["Compromising", "Smoothing", "Confronting", "Forcing"],
       "answer": 1,
       "category": "Resource Management",
       "explanation": "Smoothing (Accommodating) involves emphasizing areas of agreement rather than difference, conceding one's position to maintain harmony and relationship."
@@ -410,10 +354,7 @@
     {
       "id": 34,
       "question": "True or False: A project manager spends most of his/her time communicating.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Communications Management",
       "explanation": "True. Project managers typically spend 75% to 90% of their working time communicating with stakeholders and team members."
@@ -460,10 +401,7 @@
     {
       "id": 38,
       "question": "True or False: Performance reporting aims to inform stakeholders the good achievements of the project's objectives weekly or monthly.",
-      "options": [
-        "True",
-        "False"
-      ],
+      "options": ["True", "False"],
       "answer": 1,
       "category": "Communications Management",
       "explanation": "False. Performance reporting must be unbiased and transparent, reporting both successes/achievements and issues, variances, forecasts, and risks."
@@ -471,10 +409,7 @@
     {
       "id": 39,
       "question": "True or False: The primary goal of project risk management is to maximize the likelihood and impact of negative events or threats and to minimize the likelihood and impact of positive events or opportunities.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 0,
       "category": "Risk Management",
       "explanation": "False. The objective of project risk management is to increase the probability and impact of positive risks (opportunities) and decrease the probability and impact of negative risks (threats)."
@@ -482,10 +417,7 @@
     {
       "id": 40,
       "question": "True or False: The primary input of the identification of risks is risk register and one important output is the stakeholder register.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 0,
       "category": "Risk Management",
       "explanation": "False. The Stakeholder Register is an INPUT to Identify Risks, and the Risk Register is the primary OUTPUT of Identify Risks."
@@ -519,10 +451,7 @@
     {
       "id": 43,
       "question": "True or False: If you want to identify who your stakeholders are, asking who will not be impacted by the product or service being created can be helpful.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Stakeholder Management",
       "explanation": "True. In stakeholder analysis, identifying who is NOT impacted helps define boundaries and rule out unnecessary communications."
@@ -543,12 +472,7 @@
     {
       "id": 45,
       "question": "You just came from a meeting with one of your project stakeholders, he knew about your project and also its potential impacts, and he always supported for the work and its outcomes. How would you classify him?",
-      "options": [
-        "Supportive",
-        "Neutral",
-        "Unaware",
-        "Leading"
-      ],
+      "options": ["Supportive", "Neutral", "Unaware", "Leading"],
       "answer": 0,
       "category": "Stakeholder Management",
       "explanation": "Supportive stakeholders are aware of project and potential impacts and supportive of work and its outcomes."
@@ -556,10 +480,7 @@
     {
       "id": 46,
       "question": "True or False: The Project Manager is responsible for stakeholder expectations management.",
-      "options": [
-        "False",
-        "True"
-      ],
+      "options": ["False", "True"],
       "answer": 1,
       "category": "Stakeholder Management",
       "explanation": "True. Managing stakeholder expectations and engagement is a core responsibility of the Project Manager."
