@@ -168,7 +168,7 @@ function renderCategoryPills() {
     { id: "dictionary", name: "Từ điển & Thuật ngữ" },
     { id: "course", name: "Bài giảng Lý thuyết" },
     { id: "real-exam", name: "Đề thi Thực chiến" },
-    { id: "practice", name: "11 Bộ đề Ôn tập" },
+    { id: "practice", name: "Bộ đề Ôn tập" },
     { id: "solution", name: "Đáp án Chi tiết" },
     { id: "guide", name: "Bí kíp & Chuẩn EOS" },
     { id: "script", name: "Bản ghi & Transcript" },

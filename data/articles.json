@@ -357,6 +357,29 @@
     "hasMermaid": false
   },
   {
+    "id": "practice-de-12",
+    "title": "Đề 12 - Ôn Thi Retake SU26: Lễ Hội Ẩm Thực Flavors of Vietnam",
+    "category": "practice",
+    "categoryName": "Bộ Đề Ôn Tập",
+    "icon": "",
+    "desc": "Đề thi Retake chuẩn hóa SU26: Dự án 3.2 Tỷ, Mục tiêu QQC, Ma trận Stakeholder Power/Interest, Communication Plan, RACI 6 tasks, Toán CPM nén 2 tuần tránh bẫy đường găng mới.",
+    "tags": [
+      "Đề 12",
+      "Retake",
+      "SU26",
+      "Flavors of Vietnam",
+      "QQC",
+      "Stakeholder",
+      "RACI",
+      "CPM Crashing"
+    ],
+    "file": "practices/Đề 12 - Ôn thi Retake SU26 - Lễ hội Ẩm thực Flavors of Vietnam.md",
+    "dataPath": "data/articles/practice-de-12.md",
+    "wordCount": 1650,
+    "readTime": "8 phút đọc",
+    "hasMermaid": false
+  },
+  {
     "id": "solution-master-vie",
     "title": "Bộ Đáp Án Mẫu Master Solutions PE PMG201c (Bản Tiếng Việt)",
     "category": "solution",
@@ -775,6 +798,52 @@
     "dataPath": "data/articles/solution-de-11-eng.md",
     "wordCount": 1320,
     "readTime": "7 phút đọc",
+    "hasMermaid": false
+  },
+  {
+    "id": "solution-de-12-vie",
+    "title": "Đáp Án Chi Tiết Đề 12 - Ôn Thi Retake SU26 Flavors of Vietnam (Tiếng Việt)",
+    "category": "solution",
+    "categoryName": "Đáp Án Chi Tiết",
+    "icon": "",
+    "desc": "Lời giải chi tiết 4 Requests Đề 12: Project Charter QQC, Ma trận Stakeholder Power/Interest, Communication Matrix, RACI chuẩn 1 'A', Giải bài toán CPM nén 2 tuần (Bản tiếng Việt).",
+    "tags": [
+      "Đề 12",
+      "Retake",
+      "SU26",
+      "Flavors of Vietnam",
+      "Đáp án",
+      "Tiếng Việt",
+      "CPM Crashing",
+      "RACI"
+    ],
+    "file": "solutions/De_12_Retake_SU26_Flavors_of_Vietnam_Solution_VIE.txt",
+    "dataPath": "data/articles/solution-de-12-vie.md",
+    "wordCount": 1950,
+    "readTime": "10 phút đọc",
+    "hasMermaid": false
+  },
+  {
+    "id": "solution-de-12-eng",
+    "title": "Full Solution Đề 12 - Retake SU26 Flavors of Vietnam (English EOS)",
+    "category": "solution",
+    "categoryName": "Đáp Án Chi Tiết",
+    "icon": "",
+    "desc": "Detailed solution for Practice Exam 12 in English: QQC Charter, Power/Interest Grid, Communication Matrix, RACI, Step-by-step CPM Crashing Analysis.",
+    "tags": [
+      "Đề 12",
+      "Retake",
+      "SU26",
+      "Flavors of Vietnam",
+      "English",
+      "EOS",
+      "CPM Crashing",
+      "RACI"
+    ],
+    "file": "solutions/De_12_Retake_SU26_Flavors_of_Vietnam_Solution_ENG.txt",
+    "dataPath": "data/articles/solution-de-12-eng.md",
+    "wordCount": 1450,
+    "readTime": "8 phút đọc",
     "hasMermaid": false
   },
   {
